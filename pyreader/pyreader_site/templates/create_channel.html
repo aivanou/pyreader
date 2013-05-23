@@ -1,0 +1,24 @@
+{% extends "base_form.html" %}
+
+{% block title %} Create channel page {% endblock %}
+
+{% block content%}
+	
+	{%if error_message %}
+		{{error_message}}
+	{%endif%}
+
+	{{request.user.username}}
+	<p/>
+	<form action="/channel/create/" method="post">{% csrf_token %}
+		{%for field in form%}
+			<div class="fieldWrapper">
+				{{field.errors}}
+				{{field.label_tag}}: {{field}}
+			</div>
+		{%endfor%}
+		<p><input type="submit" value="Submit" /></p>
+	</form>
+
+
+{% endblock %}

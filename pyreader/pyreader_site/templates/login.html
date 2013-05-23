@@ -1,0 +1,23 @@
+{% extends "base_form.html" %}
+
+{% block title %} Login page {{name}}  {% endblock %}
+
+{% block content%}
+	
+	{%if error_message %}
+		{{error_message}}
+	{%endif%}
+	
+	<p/>
+	<form action="/login/" method="post">{% csrf_token %}
+		{%for field in form%}
+			<div class="fieldWrapper">
+				{{field.errors}}
+				{{field.label_tag}}: {{field}}
+			</div>
+		{%endfor%}
+		<p><input type="submit" value="Submit" /></p>
+	</form>
+
+
+{% endblock %}
