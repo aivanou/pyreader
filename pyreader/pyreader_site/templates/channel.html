@@ -8,4 +8,10 @@
 		{{channel.name}}
 	</div>
 
+	<div class="rss_urls">
+		{% for rss_url in rss_urls %}
+			<p><label>url:  {{rss_url.url}}</label></p>
+		{% endfor %}	
+	</div>
+
 {% endblock %}

@@ -7,6 +7,7 @@ urlpatterns=patterns('',
     	url(r'^test/$',views.test,name='test'),
     	url(r'^login/$',views.login_view,name='login'),
 		url(r'^channel/create/$',views.create_channel,name='create_channel'),
+		url(r'^channel/check_create_channel/$',views.check_create_channel,name='check_create_channel'),
 		url(r'^channel/show/$',views.show_channels,name='show_channels'),
     	url(r'^channel/(?P<channel_id>\d+)/$',views.channel_details,name='channel_details'),
 	)

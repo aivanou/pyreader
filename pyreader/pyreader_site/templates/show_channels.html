@@ -8,17 +8,10 @@
 		{%for channel in channels%}
 			<p>
 			<div class="show_channel">
-				<a href="/channel/show?s_channel={{channel.id}}">{{channel.name}}</a>
+				<a href="{%url 'pyreader:channel_details' channel.id%}">{{channel.name}}</a>
 			</div>
 			</p>
 		{%endfor%}
 	</div>
-
-	<div class="channel">
-		{%if not selected_channel == None%}
-			{{selected_channel.name}}
-		{%endif%}
-	</div>
-
 
 {% endblock %}

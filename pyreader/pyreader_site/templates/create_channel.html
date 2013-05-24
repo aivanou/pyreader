@@ -2,6 +2,30 @@
 
 {% block title %} Create channel page {% endblock %}
 
+{% block script %} 
+<script type="text/javascript">
+
+var current_label=4;
+
+$(function(){
+	$("#plus_rss_url").click(function(event){
+		$("#rss_urls").append("<p><label for=\"id_rss_url_"+current_label+"\">url:</label><input id=\"id_rss_url_"+current_label+"\" type=\"text\" name=\"rss_url_"+current_label+"\"/> </p>");
+		current_label+=1;
+	});
+
+	$('#channel_create').submit(function(){
+		$.post(
+			$(this).attr('action'),
+			$(this).serialize()
+		);
+	});
+
+});
+
+</script>
+{% endblock %}
+
+
 {% block content%}
 	
 	{%if error_message %}
@@ -10,13 +34,22 @@
 
 	{{request.user.username}}
 	<p/>
-	<form action="/channel/create/" method="post">{% csrf_token %}
+	<form action="/channel/check_create_channel/" id="channel_create" method="post">{% csrf_token %}
 		{%for field in form%}
 			<div class="fieldWrapper">
 				{{field.errors}}
 				{{field.label_tag}}: {{field}}
 			</div>
 		{%endfor%}
+		<div id="rss_urls" class="rss_urls_container">
+			{%for index in "123" %}
+				<p> <label for="{{"id_rss_url_"|add:index}}">url:</label>
+					<input id="{{"id_rss_url_"|add:index}}"
+					 type="text" name="{{"rss_url_"|add:index}}"/>
+				</p>
+			{%endfor%}
+		</div>
+		<p><input type="button" id="plus_rss_url" value="+"/></p>
 		<p><input type="submit" value="Submit" /></p>
 	</form>
 
