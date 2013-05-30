@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cu3er>
+	<settings>
+		
+    	<prev_button>
+			<defaults round_corners="5,5,5,5"/>
+			<tweenIn  time="0"  height="35" width="35" />
+			<tweenOver tint="0x31a1ff" scaleX="1.1" scaleY="1.1" />
+			<tweenOut tint="0x000000" />
+		</prev_button>
+		
+    	<prev_symbol>
+			<tweenIn   height="15" width="15" />
+			<defaults type="7" />
+			<tweenOver tint="0xffffff" />			
+		</prev_symbol>
+		
+    	<next_button>
+			<defaults round_corners="5,5,5,5"/>	
+			<tweenIn  time="0"  height="35" width="35" />		
+			<tweenOver tint="0x31a1ff"  scaleX="1.1" scaleY="1.1"/>
+			<tweenOut tint="0x000000" />
+		</next_button>
+		
+    	<next_symbol>
+			<tweenIn   height="15" width="15" />
+			<defaults type="7" />
+			<tweenOver tint="0xffffff" />
+		</next_symbol>	
+		<auto_play>
+			<defaults symbol="linear" time="5" />
+			<tweenIn x="0" y="350" width="800" height="2" tint="0xFFFFFF" />
+		</auto_play>	
+	</settings>    
+
+	<slides>
+	
+        <slide>
+            <url>images/slideBg.png</url>
+			
+
+
+        </slide>
+		<!-- changing transition between first & second slide -->
+        <transition num="3" slicing="vertical" direction="down"/>
+        <slide>
+       		<url>images/slideBg.png</url>
+        </slide>		
+		<!-- changing transition between second & third slide -->
+        <transition num="4" direction="right" shader="flat" />
+		<slide>
+            <url>images/slideBg.png</url>
+        </slide>
+        <!-- transitions properties defined in transitions template -->
+		<slide>
+       		<url>images/slideBg.png</url>
+        </slide>
+		<transition num="6" slicing="vertical" direction="up" shader="flat" delay="0.05" z_multiplier="4" />
+        <slide>
+       		<url>images/slideBg.png</url>
+        </slide>
+				
+	</slides>
+</cu3er>
+

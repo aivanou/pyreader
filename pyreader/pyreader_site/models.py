@@ -1,52 +1,15 @@
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
+from django.utils import timezone
 
-# Create your models here.
-
-#class User(models.Model):
-#	username=models.CharField(max_length=63)
-#	email=models.CharField(max_length=255)
-#	password=models.CharField(max_length=1024)#
-
-#	def __unicode__(self):
-#		return "%s:%s"%(self.username,self.email)#
-
-#	class Meta:
-#		db_table='users'
-
-
-class Channel_Tag(models.Model):
-	tag_name=models.CharField(max_length=512)
-	creation_date=models.DateTimeField("tag creation date")
-	tag_type=models.CharField(max_length=128)
-
-	def __unicode__(self):
-		return self.tag_name
-
-	class Meta:
-		db_table='channel_tags'
-
-class Channel(models.Model):
-	user=models.ForeignKey(settings.AUTH_USER_MODEL)
-	tags=models.ManyToManyField(Channel_Tag)
-	name=models.CharField(max_length=512)
-	creation_date=models.DateTimeField("creation date")
-	last_channel_update_date=models.DateTimeField("last channel update date")
-
-	def __unicode__(self):
-		return "%s"%(self.name)
-
-	class Meta:
-		db_table='channels'
-		
 
 class Rss_Url(models.Model):
-	channel=models.ForeignKey(Channel)
-	url=models.CharField(max_length=1024)
-	decsription=models.CharField(max_length=2048)
-	creation_date=models.DateTimeField("creation date")
-	last_update=models.DateTimeField("last update date")
+	url=models.CharField(max_length=255,unique=True)
+
+	description=models.CharField(max_length=2048,blank=True)
+	creation_date=models.DateTimeField("creation date",default=timezone.now())
+	last_update=models.DateTimeField("last update date",default=timezone.now())
 
 	def __unicode__(self):
 		return self.url
@@ -55,5 +18,45 @@ class Rss_Url(models.Model):
 		db_table='rss_urls'
 
 
+class Channel_Tag(models.Model):
+	tag_name=models.CharField(max_length=512,default='default tag name')
+	creation_date=models.DateTimeField("tag creation date",default=timezone.now())
+	tag_type=models.CharField(max_length=128,default='default tag type')
 
+	def __unicode__(self):
+		return self.tag_name
+
+	class Meta:
+		db_table='channel_tags'
+
+class Channel(models.Model):
+	users=models.ManyToManyField(settings.AUTH_USER_MODEL)
+	tags=models.ManyToManyField(Channel_Tag)
+	rss_urls=models.ManyToManyField(Rss_Url)
+
+	name=models.CharField(max_length=255,unique=True)
+	ctype=models.CharField(max_length=128,default='public') #private,public
+	description=models.CharField(max_length=512,blank=True)
+	creation_date=models.DateTimeField("creation date",default=timezone.now())
+	last_update=models.DateTimeField("last channel update date",default=timezone.now())
+
+	def __unicode__(self):
+		return "%s"%(self.name)
+
+	class Meta:
+		db_table='channels'
+
+class Category(models.Model):
+	name=models.CharField(max_length=255,unique=True)
+	ctype=models.CharField(max_length=128,default='public')
+	creation_date=models.DateTimeField(default=timezone.now())
+	last_update=models.DateTimeField(default=timezone.now())
+
+	channels=models.ManyToManyField(Channel)
+
+	def __unicode__(self):
+		return self.name
+
+	class Meta:
+		db_table='categories'
 		

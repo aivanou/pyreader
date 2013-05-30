@@ -1,17 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PyReader</title>
+<link href="{{ STATIC_URL }}css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--  STEP ONE: insert path to SWFObject JavaScript -->
+<script type="text/javascript" src="{{STATIC_URL}}swfobject.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}jquery-1.9.1.js"></script>
 
-<script src="{{ STATIC_URL }}jquery-1.9.1.js" type="text/javascript"></script>
-<script src="{{ STATIC_URL }}settings.js" type="text/javascript"></script>
-
-    <title>{% block title %}{% endblock %}</title>
-    {%block script %} {%endblock%}
+<!--  STEP TWO: configure SWFObject JavaScript and embed CU3ER slider -->
+{%block scripts%}
+{%endblock%}
+<script type="text/javascript">
+		
+</script>
 </head>
 
 <body>
-    <div id="content">
-        {% block content %}{% endblock %}
-    </div>
+<div id="head">
+ <div id="head_cen">
+  <div id="head_sup" class="head_height">
+    <ul>
+     <li><a class="active" href="index.html">Home</a></li>
+     <li><a href="about.html">ABOUT</a></li>
+     <li><a href="services.html">Login</a></li>
+     <li><a href="contact.html">Register</a></li>
+   </ul>
+  </div>
+ </div>
+</div>
+<div id="content">
+ <div id="content_cen">
+  <div id="content_sup">
+
+   <div id="menu_content">
+    	<ul>
+    		{%block menu_content%}
+    		{%endblock%}
+    	</ul>
+   </div>
+
+   <div id="text_content">
+
+   	{%block rss_content%}
+   	{%endblock%}
+
+   </div>
+
+  
+   
+  </div>
+ </div>
+</div>
+<div id="foot">
+ <div id="foot_cen">
+ <h6><a href="index.html">mcube</a></h6>
+ <ul>
+     <li><a href="index.html">Home</a></li>
+     <li class="space">|</li>
+     <li><a href="about.html">ABOUT</a></li>
+     <li class="space">|</li>
+     <li><a href="services.html">SERVICES</a></li>
+     <li class="space">|</li>
+     <li><a class="active" href="contact.html">CONTACT</a></li>
+     <li class="space">|</li>
+  	 <li><a href="http://validator.w3.org/check?uri=referer">xHtml</a></li>
+  	 <li class="space">|</li>
+  	 <li><a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></li>
+   </ul>
+    <p>© Your Copyright Info Here. Designed by: <a href="http://www.templateworld.com" target="_blank">Template World</a></p>
+ </div>
+</div>
 </body>
 </html>

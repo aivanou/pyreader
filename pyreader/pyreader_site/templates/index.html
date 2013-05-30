@@ -1,16 +1,89 @@
 {% extends "base_form.html" %}
 
-{% block title %} Index page. author {% endblock %}
+{% load jsonify %}
 
-{% block script %} 
+{%block scripts%}
+
 <script type="text/javascript">
-</script>
-{% endblock %}
 
-{% block content%}
-	
-	<div class="results" id="example">click here
-		<div id="example_1">ololo</div>
+var category_array=[];
+
+{%for c in categories%}
+	var channels=[]
+	{%for channel in c.channels%}
+		channels.push({name:"{{channel.name}}",id:"{{channel.id}}"})
+	{%endfor%}
+	category_array.push({name:"{{c.name}}",channels:channels})
+{%endfor%}
+
+
+$(function(){
+	$(".category_link").click(function(event){
+		category_id=event.target.id.trim()
+		var element=".category > ul#category_channels_".concat(category_id);
+		$(element).toggle();
+		return false;
+	});
+
+});
+
+</script>
+
+{%endblock%}
+
+{%block menu_content%}
+
+	{%for category in categories%}
+		<li class="category">
+			<a id="{{category.id}}" 
+			   class='category_link' href="/">{{category.name}}</a>
+
+			<ul class="category_channels", id="category_channels_{{category.id}}">
+				{%for channel in category.channels%}
+					<li><a href="/?channel_id={{channel.id}}">{{channel.name}}</a></li>
+				{%endfor%}
+			</ul>
+		</li>
+	{%endfor%}
+
+{%endblock%}
+
+{%block rss_content%}
+	{%if channel == None%}
+		No channels selected
+	{%else%}
+		{%for rss_data in rss_content%}
+			<div class="rss_content">
+				<p class="rss_title">{{rss_data.title}}</p>
+				<br/><br/>
+				<p class="rss_text">{{rss_data.summary|safe}}</p>
+			</div>
+		{%endfor%}
+	{%endif%}
+{%endblock%}
+
+{# 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MCUBE Solutions | CU3ER By Template World</title>
+<link href="{{ STATIC_URL }}css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!--  STEP ONE: insert path to SWFObject JavaScript -->
+<script type="text/javascript" src="{{STATIC_URL}}swfobject.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}jquery-1.9.1.js"></script>
+</head>
+
+<body>
+
+	<div class="my_head">
+			<p> Some Head Content</p>
 	</div>
 
-{% endblock %}
+	<div class="my_content">
+		<div class="panel1">  </div>
+		<div class="panel2">  </div>
+	</div>
+
+</body>
+</html>
+ #}

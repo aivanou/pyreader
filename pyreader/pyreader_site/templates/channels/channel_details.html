@@ -13,5 +13,19 @@
 			<p><label>url:  {{rss_url.url}}</label></p>
 		{% endfor %}	
 	</div>
+	<p>
+	<div id="rss_feeds">
+		{%for feed in feeds%}
+			<div id="rss_feed">
+				<p>
+				<div class="rss_feed_title">{{feed.title}}</div>
+				</p>
+				<p>
+				<div class="rss_feed_content">{{feed.summary}}</div>
+				</p>
+			</div>
+		{%endfor%}
+	</div>
+	</p>
 
 {% endblock %}

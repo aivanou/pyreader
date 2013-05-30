@@ -1,0 +1,27 @@
+{% extends "base_form.html" %}
+
+{% block title %} Index page. author {% endblock %}
+
+{% block script %} 
+<script type="text/javascript">
+</script>
+{% endblock %}
+
+{% block content%}
+
+	{%if error_message %}
+		{{error_message}}
+	{%endif%}
+
+	<form action="/accounts/register/" id="register_form" method="post">
+		{%csrf_token%}
+		{%for field in form%}
+			<div class="register_field">
+				{{field.errors}}
+				{{field.label_tag}}: {{field}}
+			</div>
+		{%endfor%}
+		<input type="submit" value="submit"/>
+	</form>
+
+{% endblock %}

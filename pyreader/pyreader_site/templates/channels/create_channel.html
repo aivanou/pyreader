@@ -28,13 +28,17 @@ $(function(){
 
 {% block content%}
 	
-	{%if error_message %}
-		{{error_message}}
+	{%if error_messages %}
+		<ul>
+		{%for message in error_messages%}
+			<li>{{message}}</li>
+		{%endfor%}
+		</ul>
 	{%endif%}
 
 	{{request.user.username}}
 	<p/>
-	<form action="/channel/check_create_channel/" id="channel_create" method="post">{% csrf_token %}
+	<form action="/channels/check_create_channel/" id="channel_create" method="post">{% csrf_token %}
 		{%for field in form%}
 			<div class="fieldWrapper">
 				{{field.errors}}

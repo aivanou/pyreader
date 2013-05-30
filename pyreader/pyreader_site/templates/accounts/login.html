@@ -9,7 +9,7 @@
 	{%endif%}
 	
 	<p/>
-	<form action="/login/" method="post">{% csrf_token %}
+	<form action="/accounts/login/" method="post">{% csrf_token %}
 		{%for field in form%}
 			<div class="fieldWrapper">
 				{{field.errors}}
