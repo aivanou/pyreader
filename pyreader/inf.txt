@@ -1,0 +1,10 @@
+1. user can be subscribed on channels and categories.
+
+Category -- a bag of rss-content + channels
+
+Channel - a customisable source of information.
+Channels can be public and private.
+User can subscribe on public channels.
+Channel includes a rss-content and other channels.
+
+So, when user creates his own source of information(channel), he can add other channels and/or sites.

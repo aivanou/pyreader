@@ -12,11 +12,25 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'TEST_CHARSET': 'UTF8',
         'OPTIONS':{
             'read_default_file':'config/mysql_develop.cnf'
         }
     }
 }
+
+CACHES={
+    'default':{
+        'BACKEND':'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': '127.0.0.1:11211',
+        'TIMEOUT':100,
+        'OPTIONS':{
+            'MAX_ENTRIES':1000
+        }
+    }
+}
+
+ATOMIC_REQUESTS=True
 
 LOGIN_URL='/login/'
 
@@ -97,6 +111,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.transaction.TransactionMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )

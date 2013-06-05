@@ -1,0 +1,1942 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="1" model="auth.permission">
+        <field type="CharField" name="name">Can add permission</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="codename">add_permission</field>
+    </object>
+    <object pk="2" model="auth.permission">
+        <field type="CharField" name="name">Can change permission</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="codename">change_permission</field>
+    </object>
+    <object pk="3" model="auth.permission">
+        <field type="CharField" name="name">Can delete permission</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">1</field>
+        <field type="CharField" name="codename">delete_permission</field>
+    </object>
+    <object pk="4" model="auth.permission">
+        <field type="CharField" name="name">Can add group</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="codename">add_group</field>
+    </object>
+    <object pk="5" model="auth.permission">
+        <field type="CharField" name="name">Can change group</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="codename">change_group</field>
+    </object>
+    <object pk="6" model="auth.permission">
+        <field type="CharField" name="name">Can delete group</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">2</field>
+        <field type="CharField" name="codename">delete_group</field>
+    </object>
+    <object pk="7" model="auth.permission">
+        <field type="CharField" name="name">Can add user</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="CharField" name="codename">add_user</field>
+    </object>
+    <object pk="8" model="auth.permission">
+        <field type="CharField" name="name">Can change user</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="CharField" name="codename">change_user</field>
+    </object>
+    <object pk="9" model="auth.permission">
+        <field type="CharField" name="name">Can delete user</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">3</field>
+        <field type="CharField" name="codename">delete_user</field>
+    </object>
+    <object pk="10" model="auth.permission">
+        <field type="CharField" name="name">Can add content type</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">4</field>
+        <field type="CharField" name="codename">add_contenttype</field>
+    </object>
+    <object pk="11" model="auth.permission">
+        <field type="CharField" name="name">Can change content type</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">4</field>
+        <field type="CharField" name="codename">change_contenttype</field>
+    </object>
+    <object pk="12" model="auth.permission">
+        <field type="CharField" name="name">Can delete content type</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">4</field>
+        <field type="CharField" name="codename">delete_contenttype</field>
+    </object>
+    <object pk="13" model="auth.permission">
+        <field type="CharField" name="name">Can add session</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="CharField" name="codename">add_session</field>
+    </object>
+    <object pk="14" model="auth.permission">
+        <field type="CharField" name="name">Can change session</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="CharField" name="codename">change_session</field>
+    </object>
+    <object pk="15" model="auth.permission">
+        <field type="CharField" name="name">Can delete session</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">5</field>
+        <field type="CharField" name="codename">delete_session</field>
+    </object>
+    <object pk="16" model="auth.permission">
+        <field type="CharField" name="name">Can add site</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="CharField" name="codename">add_site</field>
+    </object>
+    <object pk="17" model="auth.permission">
+        <field type="CharField" name="name">Can change site</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="CharField" name="codename">change_site</field>
+    </object>
+    <object pk="18" model="auth.permission">
+        <field type="CharField" name="name">Can delete site</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">6</field>
+        <field type="CharField" name="codename">delete_site</field>
+    </object>
+    <object pk="19" model="auth.permission">
+        <field type="CharField" name="name">Can add log entry</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="CharField" name="codename">add_logentry</field>
+    </object>
+    <object pk="20" model="auth.permission">
+        <field type="CharField" name="name">Can change log entry</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="CharField" name="codename">change_logentry</field>
+    </object>
+    <object pk="21" model="auth.permission">
+        <field type="CharField" name="name">Can delete log entry</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">7</field>
+        <field type="CharField" name="codename">delete_logentry</field>
+    </object>
+    <object pk="22" model="auth.permission">
+        <field type="CharField" name="name">Can add rss_ url</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">8</field>
+        <field type="CharField" name="codename">add_rss_url</field>
+    </object>
+    <object pk="23" model="auth.permission">
+        <field type="CharField" name="name">Can change rss_ url</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">8</field>
+        <field type="CharField" name="codename">change_rss_url</field>
+    </object>
+    <object pk="24" model="auth.permission">
+        <field type="CharField" name="name">Can delete rss_ url</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">8</field>
+        <field type="CharField" name="codename">delete_rss_url</field>
+    </object>
+    <object pk="25" model="auth.permission">
+        <field type="CharField" name="name">Can add rss_ content</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">9</field>
+        <field type="CharField" name="codename">add_rss_content</field>
+    </object>
+    <object pk="26" model="auth.permission">
+        <field type="CharField" name="name">Can change rss_ content</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">9</field>
+        <field type="CharField" name="codename">change_rss_content</field>
+    </object>
+    <object pk="27" model="auth.permission">
+        <field type="CharField" name="name">Can delete rss_ content</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">9</field>
+        <field type="CharField" name="codename">delete_rss_content</field>
+    </object>
+    <object pk="28" model="auth.permission">
+        <field type="CharField" name="name">Can add channel_ tag</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="CharField" name="codename">add_channel_tag</field>
+    </object>
+    <object pk="29" model="auth.permission">
+        <field type="CharField" name="name">Can change channel_ tag</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="CharField" name="codename">change_channel_tag</field>
+    </object>
+    <object pk="30" model="auth.permission">
+        <field type="CharField" name="name">Can delete channel_ tag</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">10</field>
+        <field type="CharField" name="codename">delete_channel_tag</field>
+    </object>
+    <object pk="31" model="auth.permission">
+        <field type="CharField" name="name">Can add channel</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="CharField" name="codename">add_channel</field>
+    </object>
+    <object pk="32" model="auth.permission">
+        <field type="CharField" name="name">Can change channel</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="CharField" name="codename">change_channel</field>
+    </object>
+    <object pk="33" model="auth.permission">
+        <field type="CharField" name="name">Can delete channel</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">11</field>
+        <field type="CharField" name="codename">delete_channel</field>
+    </object>
+    <object pk="34" model="auth.permission">
+        <field type="CharField" name="name">Can add category</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">12</field>
+        <field type="CharField" name="codename">add_category</field>
+    </object>
+    <object pk="35" model="auth.permission">
+        <field type="CharField" name="name">Can change category</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">12</field>
+        <field type="CharField" name="codename">change_category</field>
+    </object>
+    <object pk="36" model="auth.permission">
+        <field type="CharField" name="name">Can delete category</field>
+        <field to="contenttypes.contenttype" name="content_type" rel="ManyToOneRel">12</field>
+        <field type="CharField" name="codename">delete_category</field>
+    </object>
+    <object pk="1" model="auth.user">
+        <field type="CharField" name="password">pbkdf2_sha256$10000$LIksGPDp7mvP$zBr7JDLM/6DN/wZ0WdjM5OUVRVLYgk8ZLeKSvx9er+k=</field>
+        <field type="DateTimeField" name="last_login">2013-05-31T17:47:42+00:00</field>
+        <field type="BooleanField" name="is_superuser">True</field>
+        <field type="CharField" name="username">tierex</field>
+        <field type="CharField" name="first_name"></field>
+        <field type="CharField" name="last_name"></field>
+        <field type="CharField" name="email">joe@example.com</field>
+        <field type="BooleanField" name="is_staff">True</field>
+        <field type="BooleanField" name="is_active">True</field>
+        <field type="DateTimeField" name="date_joined">2013-05-31T17:47:42+00:00</field>
+        <field to="auth.group" name="groups" rel="ManyToManyRel"></field>
+        <field to="auth.permission" name="user_permissions" rel="ManyToManyRel"></field>
+    </object>
+    <object pk="2" model="auth.user">
+        <field type="CharField" name="password">pbkdf2_sha256$10000$JoDljoGdYzfu$f7pT68JdXfRTsFsTdYGfYB79ZBTAnsOpaYtNkREVBFM=</field>
+        <field type="DateTimeField" name="last_login">2013-06-01T16:18:48+00:00</field>
+        <field type="BooleanField" name="is_superuser">False</field>
+        <field type="CharField" name="username">alex</field>
+        <field type="CharField" name="first_name"></field>
+        <field type="CharField" name="last_name"></field>
+        <field type="CharField" name="email">alex@alex.com</field>
+        <field type="BooleanField" name="is_staff">False</field>
+        <field type="BooleanField" name="is_active">True</field>
+        <field type="DateTimeField" name="date_joined">2013-05-31T17:49:20+00:00</field>
+        <field to="auth.group" name="groups" rel="ManyToManyRel"></field>
+        <field to="auth.permission" name="user_permissions" rel="ManyToManyRel"></field>
+    </object>
+    <object pk="3" model="auth.user">
+        <field type="CharField" name="password">pbkdf2_sha256$10000$69uqlywZ7MMe$fmWziSCG4VhA+MCqHU3IPyUJ4muLgA/Zwzl6c3waBYQ=</field>
+        <field type="DateTimeField" name="last_login">2013-06-01T12:44:33+00:00</field>
+        <field type="BooleanField" name="is_superuser">False</field>
+        <field type="CharField" name="username">a</field>
+        <field type="CharField" name="first_name"></field>
+        <field type="CharField" name="last_name"></field>
+        <field type="CharField" name="email">lennon@thebeatles.com</field>
+        <field type="BooleanField" name="is_staff">False</field>
+        <field type="BooleanField" name="is_active">True</field>
+        <field type="DateTimeField" name="date_joined">2013-06-01T12:44:33+00:00</field>
+        <field to="auth.group" name="groups" rel="ManyToManyRel"></field>
+        <field to="auth.permission" name="user_permissions" rel="ManyToManyRel"></field>
+    </object>
+    <object pk="oqynpdlbryxrfj8hcgjzsg9x6woaolci" model="sessions.session">
+        <field type="TextField" name="session_data">MzAwYjk4YjE1YmQ2OWUzYzk3N2MxZDNhZWFhYjg4OTU2ZTE3Yjc3OTqAAn1xAShVEl9hdXRoX3VzZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEDVQ1fYXV0aF91c2VyX2lkcQSKAQJ1Lg==</field>
+        <field type="DateTimeField" name="expire_date">2013-06-15T16:18:48+00:00</field>
+    </object>
+    <object pk="1" model="sites.site">
+        <field type="CharField" name="domain">example.com</field>
+        <field type="CharField" name="name">example.com</field>
+    </object>
+    <object pk="1" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://feeds.bbci.co.uk/news/rss.xml</field>
+        <field type="CharField" name="description">top stories</field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+    </object>
+    <object pk="2" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://feeds.bbci.co.uk/news/world/rss.xml</field>
+        <field type="CharField" name="description">world news</field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+    </object>
+    <object pk="3" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://feeds.bbci.co.uk/news/uk/rss.xml</field>
+        <field type="CharField" name="description">uk news</field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+    </object>
+    <object pk="4" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://feeds.feedburner.com/euronews/ru/home?format=xml</field>
+        <field type="CharField" name="description">euronews main</field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+    </object>
+    <object pk="5" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://feeds.feedburner.com/euronews/ru/business?format=xml</field>
+        <field type="CharField" name="description">euronews business</field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+    </object>
+    <object pk="6" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://habrahabr.ru/rss/hubs/</field>
+        <field type="CharField" name="description">habrahabr it news</field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+    </object>
+    <object pk="7" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://tech-novelty.ru/feed/</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+    </object>
+    <object pk="8" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://www.computerweekly.com/rss/All-Computer-Weekly-content.xml</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+    </object>
+    <object pk="12" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://tt.tt</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-06-01T13:59:27+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-06-01T13:59:27+00:00</field>
+    </object>
+    <object pk="13" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://eee.eee</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-06-01T14:01:17+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-06-01T14:01:17+00:00</field>
+    </object>
+    <object pk="14" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://nene.seh</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-06-01T14:02:49+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-06-01T14:02:49+00:00</field>
+    </object>
+    <object pk="15" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://eee.tst</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-06-01T16:11:46+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-06-01T16:11:46+00:00</field>
+    </object>
+    <object pk="16" model="pyreader_site.rss_url">
+        <field type="CharField" name="url">http://444.2332</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-06-01T16:14:15+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-06-01T16:14:15+00:00</field>
+    </object>
+    <object pk="1" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">MP Mercer quits whip over Panorama</field>
+        <field type="CharField" name="summary">MP Patrick Mercer resigns the Tory whip to "save my party embarrassment" over Panorama lobbying probe.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="2" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Killed soldier's family ask for calm</field>
+        <field type="CharField" name="summary">The family of Lee Rigby say the soldier would not have wanted his death used to excuse reprisal attacks as the Queen visits Woolwich barracks where he was based.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="3" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Rebels reinforce for key Syria fight</field>
+        <field type="CharField" name="summary">Dozens of fighters arrive to reinforce rebel units battling to hold off a Syrian government and Hezbollah assault on the key town of Qusair.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="4" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Web porn curb urged after April case</field>
+        <field type="CharField" name="summary">Search engines such as Google should do more to restrict access to online pornography, a government adviser says after the April Jones case.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="5" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">BBC interviewee faces terror charges</field>
+        <field type="CharField" name="summary">A man arrested after appearing on the BBC's Newsnight programme has been charged with three terrorism offences.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="6" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">'Missing teen' suspect still held</field>
+        <field type="CharField" name="summary">Detectives searching for missing teenager Georgia Williams are given more time to question a man being held on suspicion of her murder.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="7" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Eurozone unemployment at new record</field>
+        <field type="CharField" name="summary">The unemployment rate in the eurozone reached a new record high of 12.2% in April, with 19.38 million people now out of work.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="8" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">British national 'killed in Syria'</field>
+        <field type="CharField" name="summary">Foreign Office officials are checking reports a British man has been killed in Syria along with two other people.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="9" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Zimbabwe 'must vote by 31 July'</field>
+        <field type="CharField" name="summary">Zimbabwe's highest court rules that presidential and parliamentary elections must be held by 31 July.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="10" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Traffic bottlenecks eased with £165m</field>
+        <field type="CharField" name="summary">A package of £165m is announced for 62 road schemes to ease traffic congestion around England.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="11" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">BT Openzone closes to O2 customers</field>
+        <field type="CharField" name="summary">BT Openzone's wi-fi network will no longer be available to O2 customers</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="12" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Fifa approves new racism crackdown</field>
+        <field type="CharField" name="summary">Teams face expulsion or relegation for serious incidents of racism as part of tough measures voted in by Fifa.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="13" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Horror as Dracula hammers exam hopes</field>
+        <field type="CharField" name="summary">"Horrified" pupils discover they have been taught the wrong Gothic horror novel - two weeks before they are due to sit an A-level exam.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="14" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Jennifer Lopez defends BGT outfit</field>
+        <field type="CharField" name="summary">The US singer defends her outfit on Tuesday night's episode of Britain's Got Talent.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="15" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Suarez not for sale, say Liverpool</field>
+        <field type="CharField" name="summary">Liverpool insist Luis Suarez is not for sale after the striker reportedly tells a press conference he wants to leave.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="16" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Adams targets more gold medals</field>
+        <field type="CharField" name="summary">Olympic champion Nicola Adams is targeting European, World and Commonwealth gold medals in 2014.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="17" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Adam Jones column: Friendly foes &amp; heat</field>
+        <field type="CharField" name="summary">British &amp; Irish Lions prop Adam Jones on facing old team-mates and extreme temperatures in Hong Kong</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="18" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Marquez escapes serious injury</field>
+        <field type="CharField" name="summary">Repsol Honda rider Marc Marquez avoids a serious injury in a high-speed crash in practice for the Italian MotoGP.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="19" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Mercedes test not secret - Pirelli</field>
+        <field type="CharField" name="summary">Pirelli's sporting director says the controversial tyre test with Mercedes was neither secret nor inappropriate.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="20" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Policing of payday lenders 'timid'</field>
+        <field type="CharField" name="summary">The Office of Fair Trading has been "ineffective and timid" in tackling rogue payday and door-to-door lenders, MPs say, but the regulator has defended its work.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="21" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Business group upgrades UK forecast</field>
+        <field type="CharField" name="summary">Business group the BCC upgrades its long-term growth forecasts for the UK economy over the next three years, but says challenges remain.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="22" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Hague wants 'red card' for EU laws</field>
+        <field type="CharField" name="summary">The EU needs a "red card" system for national MPs to block laws passed in Brussels if necessary, UK Foreign Secretary William Hague will say in a speech.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="23" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Carey: Gay marriage 'risks polygamy'</field>
+        <field type="CharField" name="summary">Former archbishop of Canterbury Lord Carey courts controversy by suggesting legalising same-sex marriage could pave the way for siblings to get married.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="24" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Stroke: Leg wraps could be lifesaver</field>
+        <field type="CharField" name="summary">Cheap inflatable leg wraps may save the lives of patients after a stroke, according to research in Scotland.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="25" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Probiotics 'may prevent diarrhoea'</field>
+        <field type="CharField" name="summary">A large review suggests taking probiotics could prevent diarrhoea when on antibiotics.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="26" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">11 applications per apprenticeship</field>
+        <field type="CharField" name="summary">The latest official data suggests a record 11 applications are being made for each apprenticeship vacancy in the UK</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="27" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Teachers reward pupils Gangnam Style</field>
+        <field type="CharField" name="summary">A head teacher and 50 of his staff rewarded their pupils' hard work in their exams with a shot-by-shot re-creation of the YouTube hit video Gangnam Style</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="28" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Court win over Megaupload evidence</field>
+        <field type="CharField" name="summary">Megaupload founder Kim Dotcom has won access to evidence seized during raids on the file storage service.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="29" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Start button returns to Windows 8</field>
+        <field type="CharField" name="summary">The Start button is to return to Microsoft's Windows operating system's desktop mode, a move seen by some as a major design backtrack by the firm.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="30" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Cloud may blow black holes' cover</field>
+        <field type="CharField" name="summary">Researchers say we may finally see evidence of small black holes scattered around our galaxy's centre as an enormous cloud of gas passes by.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="31" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Fossil shows how turtle got a shell</field>
+        <field type="CharField" name="summary">How the turtle shell evolved has puzzled scientists for years, but new research sheds light on how their hard shells were formed.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="32" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Bradford documentary wins Rose d'Or</field>
+        <field type="CharField" name="summary">Controversial Channel 4 documentary Make Bradford British, about integration in multi-cultural Britain, wins a prestigious international TV award.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="33" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Reni misses Stone Roses premiere</field>
+        <field type="CharField" name="summary">A documentary charting the return of The Stone Roses is premiered in the group's home city of Manchester, but drummer Reni fails to join his bandmates.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="34" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">How the Coronation kick-started the love of television</field>
+        <field type="CharField" name="summary">Television in the early 50s lacked sparkle. How did the coronation turn it into a mass medium?</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="35" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Odd names for people's loved ones</field>
+        <field type="CharField" name="summary">Some terms of endearment can be used in many languages - "baby", "angel" and "sweetheart" for example - but others don't travel as well as you might think.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="36" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Girl's diaries printed after death</field>
+        <field type="CharField" name="summary">The private diaries of a 13-year-old girl from Somerset discovered after her death from a brain aneurism are published.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="37" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">'Pants' robbers caught on CCTV</field>
+        <field type="CharField" name="summary">Two men that were identified by their distinctive underwear are detained for three years after robbing a Nottingham newsagent.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="38" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Appeal over cyclist killer sentence</field>
+        <field type="CharField" name="summary">The Crown Office announces it will appeal against the "unduly lenient" sentence given to a man who caused the death of a cyclist in Edinburgh.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="39" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Edinburgh shooting: Second arrest</field>
+        <field type="CharField" name="summary">A man injured in a fatal shooting incident in Edinburgh is arrested and charged with a breach of the peace.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="40" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Man not guilty of pensioner murder</field>
+        <field type="CharField" name="summary">James McCook is found not guilty of the murder of pensioner Norman Moffatt in Coleraine, County Londonderry.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="41" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Airtricity in 17.8% price increase</field>
+        <field type="CharField" name="summary">Airtricity, Northern Ireland's second biggest electricity supplier, announces it is increasing prices by 17.8% from 1 July 2013.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="42" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Swansea measles outbreak 'slowing'</field>
+        <field type="CharField" name="summary">The measles epidemic is slowing down but too few people are protected against the disease to stop more large outbreaks, say medics.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="43" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">'Reveal where April's body is' plea</field>
+        <field type="CharField" name="summary">Mark Bridger, the man found guilty of abducting and murdering five-year-old April Jones, is urged to finally reveal what he did with her body.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="44" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Deadly gum arabic clashes in Darfur</field>
+        <field type="CharField" name="summary">More than 60 people are killed in ethnic clashes in Sudan's Darfur region, over land producing the gum arabic stabiliser used in soft drinks, police say.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="45" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Hezbollah armoury 'found in Nigeria'</field>
+        <field type="CharField" name="summary">An armoury belonging to the Lebanese group Hezbollah has been discovered in northern Nigeria, the West African nation's army and spy agency say.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="46" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Police move in on Kyrgyz protesters</field>
+        <field type="CharField" name="summary">Angry clashes erupt at a gold mine in Kyrgyzstan as hundreds of police moved in to disperse protesters calling for a bigger share of the profits.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="47" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">India's growth slowest in a decade</field>
+        <field type="CharField" name="summary">Latest GDP figures show that India's economy grew by 5% in the 2012-13 financial year, the slowest pace for a decade.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="48" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">German population lower than thought</field>
+        <field type="CharField" name="summary">Germany's first census since reunification reveals that it has 1.5 million fewer people than had been assumed.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="49" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">'Blockupy' protesters surround ECB</field>
+        <field type="CharField" name="summary">Members of the anti-capitalist "Blockupy" movement surround the European Central Bank's headquarters in Frankfurt to protest against austerity measures.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="50" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Salvadoran woman allowed C-section</field>
+        <field type="CharField" name="summary">A seriously ill Salvadoran woman says she will undergo a Caesarean section following the Supreme Court's decision to deny her an abortion.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="51" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Brazilian Indian dies in police raid</field>
+        <field type="CharField" name="summary">A Brazilian indigenous man in his thirty is shot dead during a police operation on disputed land in the south-western state of Mato Grosso do Sul.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="52" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Iraq violence 'ready to explode'</field>
+        <field type="CharField" name="summary">The UN's envoy to Iraq warns that "systemic violence is ready to explode at any moment", as a wave of attacks across the country kills at least 24 people.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="53" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">US lifts Iran 'iPhone' sanctions</field>
+        <field type="CharField" name="summary">The US eases restrictions on the sale of mobile phones and other communications devices and software - including popular Apple products - to Iranians.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="54" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Toronto mayor 'will not resign'</field>
+        <field type="CharField" name="summary">Toronto Mayor Rob Ford says he is not stepping aside as reports of a video purporting to show him smoking crack cocaine threatens to engulf his office.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="55" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Boston bombing suspect 'walking'</field>
+        <field type="CharField" name="summary">The surviving suspect in the Boston Marathon bombings, Dzhokhar Tsarnaev, has recovered enough to walk, his mother says.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="56" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">In pictures: Queen's Coronation 1953</field>
+        <field type="CharField" name="summary">Watching the coronation of Queen Elizabeth II</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="57" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Day in pictures: 31 May 2013</field>
+        <field type="CharField" name="summary">Twenty-four hours of news photos: 31 May</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="58" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">In pictures: Burma clashes</field>
+        <field type="CharField" name="summary">Images from the town of Lashio</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="59" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Your pictures: Walls</field>
+        <field type="CharField" name="summary">Readers' photos on the theme walls</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="60" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Day in pictures: 29 May 2013</field>
+        <field type="CharField" name="summary">Twenty-four hours of news photos: 29 May</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="61" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">In pictures: Global flight paths</field>
+        <field type="CharField" name="summary">Pattern of airline travel across the globe</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="62" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">In pictures: Everest climb reported</field>
+        <field type="CharField" name="summary">Battle to break the story of how Everest was conquered</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="63" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Your pictures: Small things</field>
+        <field type="CharField" name="summary">Readers' photos on the theme small things.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="64" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: House of Commons</field>
+        <field type="CharField" name="summary">MPs approve same-sex marriage plans at third reading despite significant opposition.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="65" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Top tips for wheelchair users</field>
+        <field type="CharField" name="summary">Pete Donnelly has been a wheelchair user since the age of 19, when he broke his back in a motorcycle accident.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="66" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Female snooker player gets big break</field>
+        <field type="CharField" name="summary">An amateur snooker player, Reanne Evans, is set to become the first woman ever to play equally against men in the final of a ranking tournament.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="67" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Lopez defends her outfit on BGT</field>
+        <field type="CharField" name="summary">Jennifer Lopez defends her outfit from Britain's Got Talent after 100 complaints were made to Ofcom.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="68" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: New plan to lift German bomber</field>
+        <field type="CharField" name="summary">Experts salvaging the German aircraft, which is lying in 50ft of water at Goodwin Sands, off the Kent coast, have had to ditch their original strategy.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="69" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Algeria siege widow wants answers</field>
+        <field type="CharField" name="summary">The widow of a British hostage killed in an attack on an Algerian gas plant in January has said she still does not know how her husband died</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="70" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Student's Gothic book 'nightmare'</field>
+        <field type="CharField" name="summary">A student said life had been a nightmare since she found out she had studied the wrong Gothic text, two weeks before her exam.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="71" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Assad: Russia fulfilling arms contract</field>
+        <field type="CharField" name="summary">President Bashar al-Assad has suggested Syria may have received the first shipment of an advanced Russian air defence system.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="72" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Brazil-England match given go-ahead</field>
+        <field type="CharField" name="summary">England's friendly with Brazil in Rio de Janeiro on Sunday has been suspended over safety concerns at the recently renovated Maracana stadium.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="73" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Why do we see faces in inanimate objects?</field>
+        <field type="CharField" name="summary">Why do people see faces in inanimate objects?</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="74" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">When sweets were strictly rationed</field>
+        <field type="CharField" name="summary">The time when sweets were strictly rationed</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="75" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">One cup or 12? Readers' caffeine habits</field>
+        <field type="CharField" name="summary">And 24 more stories of caffeine consumption</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="76" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">What can we learn from children's writing?</field>
+        <field type="CharField" name="summary">The strange similes used in children's writing</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="77" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Quiz of the week's news</field>
+        <field type="CharField" name="summary">Who are the world's most prolific online sharers?</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="78" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: The lights connecting the world</field>
+        <field type="CharField" name="summary">The lamp that tells your faraway family you’ve fallen asleep</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="79" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Struggling in Britain's poorest city</field>
+        <field type="CharField" name="summary">Living in the UK's poorest city</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="80" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Space Invaders keeps on blasting</field>
+        <field type="CharField" name="summary">How one man changed video gaming forever</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="81" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">China buying up the world?</field>
+        <field type="CharField" name="summary">Is China buying up the world?</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">1</field>
+    </object>
+    <object pk="82" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Rebels reinforce for key Syria fight</field>
+        <field type="CharField" name="summary">Dozens of fighters arrive to reinforce rebel units battling to hold off a Syrian government and Hezbollah assault on the key town of Qusair.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="83" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Eurozone unemployment at new record</field>
+        <field type="CharField" name="summary">The unemployment rate in the eurozone reached a new record high of 12.2% in April, with 19.38 million people now out of work.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="84" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Fifa approves new racism crackdown</field>
+        <field type="CharField" name="summary">Teams face expulsion or relegation for serious incidents of racism as part of tough measures voted in by Fifa.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="85" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Zimbabwe 'must vote by 31 July'</field>
+        <field type="CharField" name="summary">Zimbabwe's highest court rules that presidential and parliamentary elections must be held by 31 July.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="86" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Police move in on Kyrgyz protesters</field>
+        <field type="CharField" name="summary">Angry clashes erupt at a gold mine in Kyrgyzstan as hundreds of police moved in to disperse protesters calling for a bigger share of the profits.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="87" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Hague wants 'red card' for EU laws</field>
+        <field type="CharField" name="summary">The EU needs a "red card" system for national MPs to block laws passed in Brussels if necessary, UK Foreign Secretary William Hague will say in a speech.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="88" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Xi 'no reformer' - Tiananmen group</field>
+        <field type="CharField" name="summary">Relatives of victims of the 1989 Tiananmen killings criticise Xi Jinping for failing to initiate reform, as the Chinese president embarks on a foreign tour.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="89" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">German population lower than thought</field>
+        <field type="CharField" name="summary">Germany's first census since reunification reveals that it has 1.5 million fewer people than had been assumed.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="90" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Hagel calls for China cyber talks</field>
+        <field type="CharField" name="summary">US Defence Secretary Chuck Hagel calls for honest dialogue with his Chinese counterparts about cyber threats and online spying.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="91" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Australia endorses gender choice</field>
+        <field type="CharField" name="summary">A court in Australia rules that people do not have to be registered as a man or a woman on the register of births, deaths and marriages.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="92" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">India's growth slowest in a decade</field>
+        <field type="CharField" name="summary">Latest GDP figures show that India's economy grew by 5% in the 2012-13 financial year, the slowest pace for a decade.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="93" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Puffin numbers 'weather storm wreck'</field>
+        <field type="CharField" name="summary">North Sea coast puffin populations appear to have weathered spring storms which caused the deaths of thousands of the birds, researchers believe.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="94" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Fossil shows how turtle got a shell</field>
+        <field type="CharField" name="summary">How the turtle shell evolved has puzzled scientists for years, but new research sheds light on how their hard shells were formed.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="95" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Toronto mayor 'will not resign'</field>
+        <field type="CharField" name="summary">Toronto Mayor Rob Ford says he is not stepping aside as reports of a video purporting to show him smoking crack cocaine threatens to engulf his office.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="96" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Boston bombing suspect 'walking'</field>
+        <field type="CharField" name="summary">The surviving suspect in the Boston Marathon bombings, Dzhokhar Tsarnaev, has recovered enough to walk, his mother says.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="97" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Salvadoran woman allowed C-section</field>
+        <field type="CharField" name="summary">A seriously ill Salvadoran woman says she will undergo a Caesarean section following the Supreme Court's decision to deny her an abortion.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="98" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Brazilian Indian dies in police raid</field>
+        <field type="CharField" name="summary">A Brazilian indigenous man in his thirty is shot dead during a police operation on disputed land in the south-western state of Mato Grosso do Sul.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="99" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Deadly gum arabic clashes in Darfur</field>
+        <field type="CharField" name="summary">More than 60 people are killed in ethnic clashes in Sudan's Darfur region, over land producing the gum arabic stabiliser used in soft drinks, police say.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="100" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Hezbollah armoury 'found in Nigeria'</field>
+        <field type="CharField" name="summary">An armoury belonging to the Lebanese group Hezbollah has been discovered in northern Nigeria, the West African nation's army and spy agency say.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="101" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Bhutan readies for key elections</field>
+        <field type="CharField" name="summary">Voters in Bhutan are to take part in key elections to determine which two out of four parties will participate in general elections in July.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="102" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Tendulkar 'shock' over IPL scandal</field>
+        <field type="CharField" name="summary">Indian cricket star Sachin Tendulkar says he is "shocked and disappointed" over allegations of spot-fixing in the Indian Premier League.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="103" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">'Blockupy' protesters surround ECB</field>
+        <field type="CharField" name="summary">Members of the anti-capitalist "Blockupy" movement surround the European Central Bank's headquarters in Frankfurt to protest against austerity measures.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="104" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Lawson attacks EU financial tax plan</field>
+        <field type="CharField" name="summary">Former Chancellor of the Exchequer Lord Lawson has spoken out against the EU proposal for a financial transaction tax (FTT).</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="105" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Iraq violence 'ready to explode'</field>
+        <field type="CharField" name="summary">The UN's envoy to Iraq warns that "systemic violence is ready to explode at any moment", as a wave of attacks across the country kills at least 24 people.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="106" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">US lifts Iran 'iPhone' sanctions</field>
+        <field type="CharField" name="summary">The US eases restrictions on the sale of mobile phones and other communications devices and software - including popular Apple products - to Iranians.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="107" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Killed soldier's family ask for calm</field>
+        <field type="CharField" name="summary">The family of Lee Rigby say the soldier would not have wanted his death used to excuse reprisal attacks as the Queen visits Woolwich barracks where he was based.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="108" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">MP Mercer quits whip over Panorama</field>
+        <field type="CharField" name="summary">MP Patrick Mercer resigns the Tory whip to "save my party embarrassment" over Panorama lobbying probe.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="109" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">US consumer spending falls in April</field>
+        <field type="CharField" name="summary">US consumer spending falls 0.2% in April, the first drop in nearly a year, suggesting a slowdown in economic growth.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="110" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Japan consumer prices fall 0.4%</field>
+        <field type="CharField" name="summary">Japan's consumer prices fell by 0.4% year-on-year in April, the sixth straight month of declines</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="111" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Tui Travel to buy 60 Boeing aircraft</field>
+        <field type="CharField" name="summary">Tui Travel says it has agreed to buy 60 Boeing 737 MAX aircraft, with an option to buy a further 90 of the same model.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="112" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Suarez not for sale, say Liverpool</field>
+        <field type="CharField" name="summary">Liverpool insist Luis Suarez is not for sale after the striker reportedly tells a press conference he wants to leave.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="113" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Valdes to quit Barcelona in 2014</field>
+        <field type="CharField" name="summary">Barcelona goalkeeper Victor Valdes confirms he will leave the club when his contract expires in the summer of 2014.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="114" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Marquez escapes serious injury</field>
+        <field type="CharField" name="summary">Repsol Honda rider Marc Marquez avoids a serious injury in a high-speed crash in practice for the Italian MotoGP.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="115" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Heavy metal singer released on bail</field>
+        <field type="CharField" name="summary">Tim Lambesis, lead singer of US heavy metal band As I Lay Dying, is released on bail after being accused of plotting to murder his estranged wife.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="116" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Bradford documentary wins Rose d'Or</field>
+        <field type="CharField" name="summary">Controversial Channel 4 documentary Make Bradford British, about integration in multi-cultural Britain, wins a prestigious international TV award.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="117" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Les Mis returns to Broadway home</field>
+        <field type="CharField" name="summary">Hit musical Les Miserables to return to its former home on Broadway when it lands in New York in 2014.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="118" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: 'Assad wants women and children killed'</field>
+        <field type="CharField" name="summary">Women and children are dying in the battle for control of Qusair and more than 600 people there have been injured, a doctor in Syria has told the BBC.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="119" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Can your teenager spell cyanophycean?</field>
+        <field type="CharField" name="summary">The US National Spelling Bee 2013 put entrants under pressure in a final contest that was broadcast live.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="120" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: UN mulls ethics of 'killer robots'</field>
+        <field type="CharField" name="summary">The UN Human Rights Council has heard an appeal for a moratorium on the use of so-called 'killer robots'.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="121" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Can Greece stop its 'brain drain'?</field>
+        <field type="CharField" name="summary">The government in Greece says the worst of the country's debt crisis is over, but for many of the country's unemployed youth the effects are still being felt</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="122" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Pakistan hit by measles epidemic</field>
+        <field type="CharField" name="summary">Parts of Pakistan are suffering from their worst outbreak of measles in living memory.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="123" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: New regulation for Singapore media</field>
+        <field type="CharField" name="summary">New press restrictions are due to come into effect in Singapore, requiring news websites to apply for licences.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="124" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Will Russia's smoking ban work?</field>
+        <field type="CharField" name="summary">A ban on smoking in some public places is due to come into effect in Russia on Saturday.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="125" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Brazil-England match given go-ahead</field>
+        <field type="CharField" name="summary">England's friendly with Brazil in Rio de Janeiro on Sunday has been suspended over safety concerns at the recently renovated Maracana stadium.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="126" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: One-minute World News</field>
+        <field type="CharField" name="summary">Watch the latest news summary from BBC World News. International news updated 24 hours a day.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="127" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Failure toughens Rocky entrepreneurs</field>
+        <field type="CharField" name="summary">Why failure is no barrier to success in the US</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="128" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">US eyes rising China at Singapore security talks</field>
+        <field type="CharField" name="summary">US eyes rising China at Singapore security talks</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="129" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Disturbed Indian's solitary decade</field>
+        <field type="CharField" name="summary">A man's mistreatment highlights the challenge of mental disorder</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="130" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Fighting Pakistan's measles epidemic</field>
+        <field type="CharField" name="summary">The battle against Pakistan's measles epidemic</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="131" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">How LA surgeons cope in gang gun war</field>
+        <field type="CharField" name="summary">How LA surgeons cope in gang gun war</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="132" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Quiz of the week's news</field>
+        <field type="CharField" name="summary">Who are the world's most prolific online sharers?</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="133" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Africa Beats: Zimbabwe's Mokoomba</field>
+        <field type="CharField" name="summary">How a Zimbabwean band thundered to fame</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="134" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Killed soldier's family ask for calm</field>
+        <field type="CharField" name="summary">The family of Lee Rigby say the soldier would not have wanted his death used to excuse reprisal attacks as the Queen visits Woolwich barracks where he was based.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="135" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">MP Mercer quits whip over Panorama</field>
+        <field type="CharField" name="summary">MP Patrick Mercer resigns the Tory whip to "save my party embarrassment" over Panorama lobbying probe.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="136" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">'Reveal where April's body is' plea</field>
+        <field type="CharField" name="summary">Mark Bridger, the man found guilty of abducting and murdering five-year-old April Jones, is urged to finally reveal what he did with her body.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="137" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Traffic bottlenecks eased with £165m</field>
+        <field type="CharField" name="summary">A package of £165m in grant money is announced for 62 road schemes to ease traffic congestion around England.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="138" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">British national 'killed in Syria'</field>
+        <field type="CharField" name="summary">Foreign Office officials are checking reports a British man has been killed in Syria along with two other people.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="139" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">BBC interviewee faces terror charges</field>
+        <field type="CharField" name="summary">A man arrested after appearing on the BBC's Newsnight programme has been charged with three terrorism offences.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="140" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Appeal over cyclist killer sentence</field>
+        <field type="CharField" name="summary">The Crown Office announces it will appeal against the "unduly lenient" sentence given to a man who caused the death of a cyclist in Edinburgh.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="141" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Hague wants 'red card' for EU laws</field>
+        <field type="CharField" name="summary">The EU needs a "red card" system for national MPs to block laws passed in Brussels if necessary, UK Foreign Secretary William Hague will say in a speech.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="142" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Carey: Gay marriage 'risks polygamy'</field>
+        <field type="CharField" name="summary">Former archbishop of Canterbury Lord Carey courts controversy by suggesting legalising same-sex marriage could pave the way for siblings to get married.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="143" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Policing of payday lenders 'timid'</field>
+        <field type="CharField" name="summary">The Office of Fair Trading has been "ineffective and timid" in tackling rogue payday and door-to-door lenders, MPs say.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="144" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">'Missing teen' suspect still held</field>
+        <field type="CharField" name="summary">Detectives searching for missing teenager Georgia Williams are given more time to question a man being held on suspicion of her murder.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="145" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Business group upgrades UK forecast</field>
+        <field type="CharField" name="summary">Business group the BCC upgrades its long-term growth forecasts for the UK economy over the next three years, but says challenges remain.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="146" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Algeria siege widow wants answers</field>
+        <field type="CharField" name="summary">The widow of a British hostage killed in an attack on an Algerian gas plant in January says she still does not know how her husband died.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="147" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Stroke: Leg wraps could be lifesaver</field>
+        <field type="CharField" name="summary">Cheap inflatable leg wraps may save the lives of patients after a stroke, according to research in Scotland.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="148" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Children shot with airgun at school</field>
+        <field type="CharField" name="summary">A 16-year-old is arrested in Edinburgh after children were hit by airgun pellets in a primary school playground during lunch break.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="149" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Girl's diaries printed after death</field>
+        <field type="CharField" name="summary">The private diaries of a 13-year-old girl from Somerset discovered after her death from a brain aneurism are published.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="150" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Teachers reward pupils Gangnam Style</field>
+        <field type="CharField" name="summary">A head teacher and 50 of his staff rewarded their pupils' hard work in their exams with a shot-by-shot re-creation of the YouTube hit video Gangnam Style</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="151" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Museum plan for London station roof</field>
+        <field type="CharField" name="summary">Part of London's oldest railway station is set to be rebuilt in Aberystwyth as part of a proposed £10m narrow gauge railway museum.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="152" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Man not guilty of pensioner murder</field>
+        <field type="CharField" name="summary">James McCook is found not guilty of the murder of pensioner Norman Moffatt in Coleraine, County Londonderry.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="153" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Airtricity in 17.8% price increase</field>
+        <field type="CharField" name="summary">Airtricity, Northern Ireland's second biggest electricity supplier, announces it is increasing prices by 17.8% from 1 July 2013.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="154" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Swansea measles outbreak 'slowing'</field>
+        <field type="CharField" name="summary">The measles epidemic is slowing down but too few people are protected against the disease to stop more large outbreaks, say medics.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="155" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Jones 'conversation' on Welsh usage</field>
+        <field type="CharField" name="summary">A "national conversation" about how Welsh is spoken in everyday life is launched by first minister, including asking why some people do not choose to use the language.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="156" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Edinburgh shooting: Second arrest</field>
+        <field type="CharField" name="summary">A man injured in a fatal shooting incident in Edinburgh is arrested and charged with a breach of the peace.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="157" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Puffin numbers 'weather storm wreck'</field>
+        <field type="CharField" name="summary">North Sea coast puffin populations appear to have weathered spring storms which caused the deaths of thousands of the birds, researchers believe.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="158" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Horror as Dracula hammers exam hopes</field>
+        <field type="CharField" name="summary">"Horrified" pupils discover they have been taught the wrong Gothic horror novel - two weeks before they are due to sit an A-level exam.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="159" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">'Pants' robbers caught on CCTV</field>
+        <field type="CharField" name="summary">Two men that were identified by their distinctive underwear are detained for three years after robbing a Nottingham newsagent.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="160" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Adams targets more gold medals</field>
+        <field type="CharField" name="summary">Olympic champion Nicola Adams is targeting European, World and Commonwealth gold medals in 2014.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="161" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Farah to run Diamond League 5,000m</field>
+        <field type="CharField" name="summary">Double Olympic champion Mo Farah avoids world record holder Kenenisa Bekele in the Diamond League after switching events.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="162" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Hodgson defends England tactics</field>
+        <field type="CharField" name="summary"></field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="163" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Why do we see faces in inanimate objects?</field>
+        <field type="CharField" name="summary">A group plans to scour the planet via satellite imagery for human-like features. Why do we see faces in our surroundings?</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="164" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">One cup or 12? Readers' caffeine habits</field>
+        <field type="CharField" name="summary">How much is too much caffeine - and what does it do to the body? Here are 25 readers' stories of their caffeine consumption.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="165" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Quiz of the week's news</field>
+        <field type="CharField" name="summary">The Magazine's weekly quiz of the news, 7 days 7 questions.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="166" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Lawson attacks EU financial tax plan</field>
+        <field type="CharField" name="summary">Former Chancellor of the Exchequer Lord Lawson has spoken out against the EU proposal for a financial transaction tax (FTT).</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="167" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">MPs' agenda redesign costs £30,000</field>
+        <field type="CharField" name="summary">Parliament spends £30,000 redesigning the daily paper which lists the business of the House for members.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="168" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">UK faces court over migrant benefits</field>
+        <field type="CharField" name="summary">Britain is being taken to the European Court of Justice for allegedly discriminating against EU nationals who claim social security in the UK.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="169" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: House of Commons</field>
+        <field type="CharField" name="summary">MPs approve same-sex marriage plans at third reading despite significant opposition.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="170" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Algeria siege widow wants answers</field>
+        <field type="CharField" name="summary">The widow of a British hostage killed in an attack on an Algerian gas plant in January has said she still does not know how her husband died</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="171" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Tougher standards for UK beaches</field>
+        <field type="CharField" name="summary">New standards for water quality mean many UK beaches could soon be forced to display warning signs</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="172" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Thomson upbeat as Dreamliner arrives</field>
+        <field type="CharField" name="summary">Thomson Airways will become the first UK airline to take delivery of Boeing's Dreamliner aircraft on Friday.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="173" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Female snooker player gets big break</field>
+        <field type="CharField" name="summary">An amateur snooker player, Reanne Evans, is set to become the first woman ever to play equally against men in the final of a ranking tournament.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="174" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: New plan to lift German bomber</field>
+        <field type="CharField" name="summary">Experts salvaging the German aircraft, which is lying in 50ft of water at Goodwin Sands, off the Kent coast, have had to ditch their original strategy.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="175" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: April's neighbourhood hoping to heal</field>
+        <field type="CharField" name="summary">The hunt for missing April Jones sparked the biggest search operation in UK police history, taking in 2,000 hours of CCTV evidence and nearly 5,000 calls and messages from the public.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="176" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Policing of payday lenders 'timid'</field>
+        <field type="CharField" name="summary">A regulator has been "ineffective and timid" in tackling rogue payday and door-to-door lenders, MPs have said</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="177" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: Top tips for wheelchair users</field>
+        <field type="CharField" name="summary">Pete Donnelly has been a wheelchair user since the age of 19, when he broke his back in a motorcycle accident.</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="178" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">When sweets were strictly rationed</field>
+        <field type="CharField" name="summary">The time when sweets were strictly rationed</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="179" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">How do wheelchairs get down stairs?</field>
+        <field type="CharField" name="summary">How do wheelchairs get down stairs?</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="180" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">'I loved the Olympics - but it's not the TT'</field>
+        <field type="CharField" name="summary">Athlete Derek Redmond's new found passion for TT racing</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="181" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Struggling in Britain's poorest city</field>
+        <field type="CharField" name="summary">Living in the UK's poorest city</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="182" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">'Fattest town's' battle of the bulge</field>
+        <field type="CharField" name="summary">How Boston is battling to shed its 'fattest town' image</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="183" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Adam Jones column: Friendly foes &amp; heat</field>
+        <field type="CharField" name="summary">Lions prop Adam Jones on friendly foes and hostile conditions</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="184" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">What can we learn from children's writing?</field>
+        <field type="CharField" name="summary">The strange similes used in children's writing</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="185" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">VIDEO: The lights connecting the world</field>
+        <field type="CharField" name="summary">The lamp that tells your faraway family you’ve fallen asleep</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="186" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Papers voice post-April case fears</field>
+        <field type="CharField" name="summary">Papers voice post April case fears</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">3</field>
+    </object>
+    <object pk="187" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Британия: королева посетила армейские казармы в Вуличе</field>
+        <field type="CharField" name="summary">Британская королева Елизавета II в пятницу посетила  воинскую часть в Вуличе, где служил убитый исламскими экстремистами Ли Ригби. Нападение на…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/X6ydYhaaFzs" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="188" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Активисткам FEMEN грозит тунисская тюрьма</field>
+        <field type="CharField" name="summary">Трое задержанных в Тунисе активисток FEMEN могут получить тюремный срок : в пятницу их адвокаты сообщили, что суд состоится 5 июня.   Двум…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/A_O5T6fGil8" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="189" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Жители Стамбула вступили в бой за деревья парка Гези</field>
+        <field type="CharField" name="summary">Защитники парка Гези в центре Стамбула продолжают борьбу - в пятницу утром полиция вновь разгоняла манифестантов, пустив в ход водометы. Сотни…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/QQvQsO7t2wg" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="190" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Сальвадор: кесарево сечение против решения суда</field>
+        <field type="CharField" name="summary">В Сальвадоре тяжелобольная беременная женщина, которой Верховный суд запретил аборт, получила разрешение от министра здравоохранения сделать…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/ygm22WhNj0M" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="191" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">"Хезболлах" готовила теракты в Нигерии?</field>
+        <field type="CharField" name="summary">Большой склад оружия обнаружен в городе Кано на севере Нигерии.  Службы безопасности этой страны заявляют, что он принадлежал боевикам радикального…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/uyGQwRtoA-E" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="192" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Турецкая полиция разогнала манифестантов в Стамбуле</field>
+        <field type="CharField" name="summary">no comment : Турецкая полиция разогнала манифестантов в Стамбуле&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/IZAcWf-j0jA" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="193" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Акция антиглобалистов во Франкфурте-на-Майне</field>
+        <field type="CharField" name="summary">Активисты антикапиталистического протестного движения Blockupy собрались в пятницу на манифестацию около здания Европейского центробанка во…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/L-wAYhcjKYw" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="194" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Асад: все достигнутые в Женеве договорённости должны быть вынесены на референдум</field>
+        <field type="CharField" name="summary">Требование оппозиции о досрочной отставке президента Сирии антиконституционно, заявил Башар Асад в интервью ливанскому телеканалу "Аль-Манар". Говоря…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/-V151M2xRl4" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="195" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Газовая атака на автоматы по продаже железнодорожных билетов</field>
+        <field type="CharField" name="summary">Автоматы по продаже билетов могут взрываться! С таким предупреждением выступила полиция в Германии после того, как были раскрыты попытки их взломать.…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/n3zWB9xgsUs" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="196" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Стрельба в Цюрихе. Полиция думает о расизме</field>
+        <field type="CharField" name="summary">Два человека получили ранения в результате стрельбы на улицах Цюриха. Мотивы нападения неивестного мужчины остаются не ясны, но полиция рассматривает…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/Q1j9xhDxxls" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="197" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Бараку Обаме отправлено ядовитое письмо</field>
+        <field type="CharField" name="summary">Письмо с угорозами и ядом рицин отправлено на имя президента США Барака Обамы и оно, как говорят американские СМИ, аналогично двум посланиям,…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/2qYGkSKyri4" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="198" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Американка и британец убиты в Сирии</field>
+        <field type="CharField" name="summary">Гражданка США и подданный Великобритании погибли в Сирии, сражаясь с правительственными войсками на стороне повстанцев. По данным официального…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/pKKFT7M5-Zk" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="199" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Джохар Царнаев сказал матери по телефону, что невиновен</field>
+        <field type="CharField" name="summary">Подозреваемый в организации теракта во время бостонского марафона в апреле этого года уже достаточно поправился, чтобы встать с постели. Джохар…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/25uE10lwU5Y" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="200" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Париж-Берлин: приоритет - занятость</field>
+        <field type="CharField" name="summary">Франция и Германия, с трудом скрывавшие свои разногласия относительно рецептов выхода из кризиса - для Берлина это сокращение дефицита, для Парижа -…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/st0yFRqcYko" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="201" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Киев остается без избранного мэра еще на 2 года</field>
+        <field type="CharField" name="summary">Еще 2  года Киев будет жить без избранного горожанами мэра. Конституционный суд Украины объявил в четверг, что местные выборы в столице "должны…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/home/~4/dLgcO4MBMO0" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">4</field>
+    </object>
+    <object pk="202" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Европейцы стали меньше тратить</field>
+        <field type="CharField" name="summary">Объем розничных продаж в Германии неожиданно упал в апреле на 0,4% в сравнении с предыдущим месяцем, посеяв сомнения относительно надежд на то, что…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/bczlosWLZiE" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="203" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Социальный бизнес: дать заработать безработным</field>
+        <field type="CharField" name="summary">Социальное предпринимательство: речь идет о помощи в создании  бизнеса для  малоимущих. В Европе такие компании составляют сегодня  четверть всех…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/2VhvRrdkW28" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="204" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Число безработных во Франции выросло 24-й месяц подряд</field>
+        <field type="CharField" name="summary">Количество безработных во Франции в апреле достигло новой рекордной отметки в 3 миллиона 264 тысячи 400 человек. Данные министерства труда…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/YNr_ZfeAF1A" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="205" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">США вернули лидерство в мировом рейтинге конкурентоспособности</field>
+        <field type="CharField" name="summary">Гонконгу не удалось удержать лидерство в мировом рейтинге конкурентоспособности. Рассчитывающий его Международный институт развития менеджмента,…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/z9mYqoH-gDI" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="206" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Экономика США выросла в 1 квартале на 2,4%</field>
+        <field type="CharField" name="summary">Сокращение государственных расходов оказало более существенное негативное влияние на американскую экономику, чем предполагалось ранее. Как сообщило…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/ud_4L1_t3H0" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="207" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Доверие к экономике еврозоны выросло</field>
+        <field type="CharField" name="summary">Доверие к экономике еврозоны в мае выросло больше, чем ожидалось, подкрепив надежды на восстановление во второй половине года. Сводный индекс…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/nfTX3eQCfGk" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="208" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Спад экономики Испании в 1 квартале составил 0,5%</field>
+        <field type="CharField" name="summary">ВВП Испании в 1-м квартале этого года сократился на 0,5% по сравнению с предыдущими тремя месяцами. Данные Национального института статистики совпали…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/fWLaPP1UNRU" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="209" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Nasdaq заплатит 10 миллионов за сбой при IPO Facebook</field>
+        <field type="CharField" name="summary">Американская комиссия по биржам и ценным бумагам оштрафовала компанию Nasdaq на 10 миллионов долларов за сбой в компьютерной программе, произошедший…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/GhJoCp_f9ac" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="210" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Закрытие торгов на европейских биржах: 29.05.2013</field>
+        <field type="CharField" name="summary">&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/SSc7WazK_8c" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="211" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Брюссель призывает смягчить меры экономии</field>
+        <field type="CharField" name="summary">Страны еврозоны должны сосредоточиться на реформировании своих рынков труда и услуг и могут замедлить темпы сокращения дефицитов госбюджета -…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/lURb6lxljag" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="212" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Германия: плохая погода привела к росту числа безработных и ускорению инфляции</field>
+        <field type="CharField" name="summary">Холодный и дождливый май 2013-го не прошел бесследно для крепкой экономики Германии, в частности - ее рынка труда. Число безработных в стране в этом…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/tgj13cGNzWM" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="213" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Spanghero: 240 сотрудников будут уволены</field>
+        <field type="CharField" name="summary">Назначенный государством временный управляющий французской компании Spanghero, оказавшейся в центре скандала, связанного с продажей конины под видом…&lt;img height="1" src="http://feeds.feedburner.com/~r/euronews/ru/business/~4/HZ1TRJoQ_kU" width="1" /&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">5</field>
+    </object>
+    <object pk="214" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Где разработчики настолько суровы, что в хакатоне побеждает проект весом в 100 кг?</field>
+        <field type="CharField" name="summary">На днях в наших питерском и мюнхенском офисах прошел первый для JetBrains хакатон. Десятки команд внутри компании отложили обычную работу, чтобы на 48 часов сосредоточиться на создании собственного продукта. Такой формат кодинга нон-стоп набрал популярность давно, но в JetBrains хакатоны раньше не проводились. Первый опыт вышел удачным, и мы решили им поделиться: вдруг и в других компаниях хакатоны помогут ребятам сменить контекст и реализовать давние идеи.&lt;br /&gt;
+&lt;br /&gt;
+В нашей битве умов могли принять участие как сотрудники компании, так и их друзья и знакомые программисты. Идея была воспринята на ура, и группы коллег с энтузиазмом принялись обсуждать идеи проектов и различные пути их реализации. Мы организовали страничку в интранете, на которой можно было предлагать проекты и присоединяться к чужим идеям. На несколько дней обычные рабочие процессы замедлились, участники переключились на свои нетривиальные проекты.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src="http://habrastorage.org/storage2/9e2/1b4/eb3/9e21b4eb35e84a7cd1d7a572717af1f7.png" /&gt;&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181672/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="215" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">HTML/CSS/JS + Node.js + node-webkit = Кроссархитектурные приложения</field>
+        <field type="CharField" name="summary">&lt;img align="left" src="http://nodejs.org/images/logos/nodejs-green.png" /&gt;&lt;br /&gt;
+С ростом популярности node.js он становится всё более привлекательным для разработки приложений. По крайней мере я в последнее время очень часто использую эту технологию для быстрой разработки оных. И на данный момент, технологически нет никаких препятствий для разработки кроссплатформенных приложений на одном языке. И не только классических Web-приложений (клиент-сервер) но и десктопных.&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181670/#habracut"&gt;Подробности&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="216" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">[recovery mode] Выгодно покупаем софт для Mac OS X</field>
+        <field type="CharField" name="summary">Всем привет!&lt;br /&gt;
+&lt;br /&gt;
+Легализация программного обеспечения в настоящее время — это не только тернистый путь подчищения кармы, но и верный способ избежать возникновения разногласий с законами Российской Федерации, которые мы чтим и уважаем.&lt;br /&gt;
+&lt;br /&gt;
+И как бы ни шутили Windows-пользователи по поводу количества программ на Mac OS X, тем не менее, софт пишется, и зачастую — качественный и удобный. Но и эти программы, используемые в нелицензионном режиме, могут привести к серьёзным проблемам с УК РФ.&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181656/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="217" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Найдены серьёзные баги в pymongo</field>
+        <field type="CharField" name="summary">Жаль отменили топики ссылки. Этот топик получается изрядно коротким.&lt;br /&gt;
+В багтрекере разработчиков mongodb появился забавный &lt;a href="https://jira.mongodb.org/browse/PYTHON-532"&gt;bug&lt;/a&gt;, касающийся качества исполнения драйвера Python-&amp;gt;MongoDB.&lt;br /&gt;
+Я думаю, всем заинтересованным лучше проверить, затронет ли их эта проблема. И, похоже, null pointer dereference может встретиться далеко за пределами pymongo. Ждём красивых багрепортов от Монги. &lt;a href="http://habrahabr.ru/post/181668/#habracut"&gt;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="218" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">[recovery mode] Полная поддержка GROUP_CONCAT в Doctrine2</field>
+        <field type="CharField" name="summary">Привет всем.&lt;br /&gt;
+&lt;br /&gt;
+Так сложилось, что в проекте, над которым я сейчас работаю, потребовалось использовать функцию GROUP_CONCAT(). К сожалению, Doctrine2 «из коробки» эту функцию не поддерживает. &lt;a href="https://github.com/beberlei/DoctrineExtensions/blob/master/lib/DoctrineExtensions/Query/Mysql/GroupConcat.php"&gt;Имеющееся же расширение&lt;/a&gt; от одного из разработчиков Doctrine2 (Benjamin Eberlei) значится как «limited support for GROUP_CONCAT». Понимаю, что использование данной функции автоматом ставит проект в зависимость от MySQL, но менять СУБД как перчатки не планируется. Так что оставим этот вопрос за рамками поста.&lt;br /&gt;
+&lt;br /&gt;
+Поскольку погуглив я не нашел готового решения, решил написать его сам (взяв за основу разработку Benjamin'а). Комментировать там особо нечего, поэтому просто представляю его на суд общественности:&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181666/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="219" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Как пишутся книги</field>
+        <field type="CharField" name="summary">Мой самый крупный самостоятельный проект — увесистый том «Pro Android Web Game Apps» увидел свет не только в электронной форме, но и во плоти. В этой заметке я хочу поделиться своим опытом — рассказать о том, как появляются на свет технические книги — от идеи и переговоров с издательствами до утверждения обложки и печати.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img alt="cover" src="http://juriy.com/misc/img/habr_book_1.jpg" /&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;h4&gt;Первые шаги и разговор с издательством&lt;/h4&gt;&lt;br /&gt;
+Когда мысль о книге впервые пришла ко мне в голову, я даже не хотел её озвучивать. 99% моих идей кто-то уже придумал, нужно только как следует поискать. В этот раз было не так – google не возвращал ничего кроме блогов или отрывочных заметок — ничего действительно фундаментального. Значит у идеи есть шанс. Раз так, то почему бы не попробовать?&lt;br /&gt;
+&lt;br /&gt;
+Процесс «для новых авторов» у всех крупных издательств приблизительно одинаковый: опишите нам свою идею, объясните почему именно вы должны её реализовать и не звоните нам, мы сами вам позвоним. Чтобы начать переговоры, нужно написать 2-3 страницы в свободном стиле о вас и вашей книге. Три из пяти издательств, которым я написал ответили, что моя тема не входит в стратегию развития на следующий год. Ещё два издательства — Apress и Manning ответили, что им интересно. Apress ответил быстрее и всего через несколько часов я начал с ними работать.&lt;br /&gt;
+На этом этапе моей основной проблемой был язык. Я неплохо говорю, и могу сносно обсудить релиз проекта, футбол или игру Эммы Уотсон, но книга — это совсем другое. Любая неточность будет лишний раз напоминать, что автор пишет на неродном языке.&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181640/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="220" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Как мы устроили бранчи под каждую задачу</field>
+        <field type="CharField" name="summary">Всем привет! Сегодня я бы хотел рассказать о том, какие есть способы устроить бранчи под каждую задачу и как мы это сделали у себя в Alawar. Здесь рассматривается простой приём с apache2, который позволяет получить отличный результат и может быть полезна как веб-разработчиками, так и системным администраторам. Стоит отметить, что аналогичные решения уже освещались на хабре (например, &lt;a href="http://habrahabr.ru/post/158855/"&gt;тут&lt;/a&gt;), но часто они написаны для слишком узкой аудитории и не дают ответы на все вопросы и, главное, часто усложняют задачу. Цель же конкретно этой статьи, – показать, как на самом деле всё просто.&lt;br /&gt;
+&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181636/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="221" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Сказ о том, как мы карту с биллингом дружили</field>
+        <field type="CharField" name="summary">Хабр, и снова привет! В прошлом году я уже писал одну &lt;a href="http://habrahabr.ru/post/162561/"&gt;статью&lt;/a&gt;, после этого было несколько попыток написать новую, но все не выходило. Наконец появилась более или менее сформированная мысль, которую я и постараюсь оформить в виде полноценной статьи. Речь пойдет о работе с устройствами, точнее о том, как мы смогли связать базу данных используемого оборудования, их географическое расположение с используемым биллингом. Интересующиеся — под кат.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src="http://habrastorage.org/storage2/102/5be/f92/1025bef927afe755f120b2657d6f618a.png" /&gt;&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181652/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="222" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">«Острова» Яндекса: техническая сторона и API</field>
+        <field type="CharField" name="summary">&lt;img src="http://cho.justos.org:9119/counter.gif" /&gt;16 мая на конференции YaC/m Яндекс объявил о запуске новой поисковой платформы «Острова». Уже в первые две недели после анонса вебмастера создали около 1000 островов для своих сайтов. Но новая платформа вызывает и множество вопросов. Мы уже рассказывали на Хабре о том, &lt;a href="http://habrahabr.ru/company/yandex/blog/179777/"&gt;как Острова выглядят&lt;/a&gt; и почему они визуально устроены именно так. &lt;br /&gt;
+&lt;br /&gt;
+Меня зовут Олег Левчук, и я работаю менеджером в команде «Островов» и отвечаю за интерактивные ответы в результатах поиска Яндекса. Так что сегодня я хочу поговорить подробнее о том, как работают интерактивные ответы и на каких принципах они основаны. Давайте начнем с того, как вообще появилась эта идея — это поможет вам лучше понять результат. &lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://habrahabr.ru/company/yandex/blog/181646/"&gt;&lt;img src="http://img-fotki.yandex.ru/get/6710/4604496.15/0_6986c_4968b0f9_orig" /&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;h4&gt;От сниппетов к островам&lt;/h4&gt;&lt;br /&gt;
+Яндекс последовательно развивал представление поисковых результатов. С одной стороны, мы работали с результатами «органической» выдачи, с другой — делали специализированные ответы, которые назвали колдунщиками. &lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181646/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="223" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">[Из песочницы] Беглый взгляд на DesignSpark PCB</field>
+        <field type="CharField" name="summary">&lt;img align="left" src="http://habrastorage.org/storage2/4c4/432/6fd/4c44326fdfe12eae7cd66cff8754731a.jpg" /&gt; Традиционно, при проектировке печатных плат для электроники разной степени DIY-ности большинством используется практически один и тот же набор софта: Proteus, EagleCAD, SprintLayout и т.д. До недавнего времени все мои потребности удовлетворяла связка Proteus + SprintLayout, однако, Proteus пришлось удались, а с прочими CAD-программами электронной направленности (из тех что «на слуху») хороших отношений у меня не сложилось, а схемки рисовать только на бумаге или на окне не хотелось.&lt;br /&gt;
+Поиск альтернатив привел меня на сайт буржуйской программы DesignSpark PCB, а дальнейшее использование побудило написать этот небольшой обзор. &lt;br /&gt;
+&lt;br /&gt;
+С моей, сугубо субъективной точки зрения, удобство использования подобных CAD-программ на 80% складывается из двух пунктов:&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;Удобство создания собственных электронных компонентов&lt;/li&gt;
+&lt;li&gt;Удобство трассировки плат&lt;/li&gt;
+&lt;/ul&gt;&lt;br /&gt;
+Об этих двух пунктах речь далее и пойдет. &lt;br /&gt;
+&lt;br /&gt;
+&lt;h4&gt;Дисклеймер&lt;/h4&gt;&lt;br /&gt;
+Все чертежи, описанные в данной статье, созданы исключительно для данной статьи. Они не претендуют на оптимальность, проработанность, соответствие каким-либо нормам и стандартам. Они никогда не были и не будут созданы автором, так что даже работоспособность плат ничем не подтверждена. Любые оценки, сравнения, сопоставления и выводы являются на 100% субъективными.&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181634/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="224" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">[Перевод] Создаем Shazam на Java</field>
+        <field type="CharField" name="summary">&lt;img src="http://habrastorage.org/storage2/05b/78d/da3/05b78dda3b41b7d0e9ad6febbc2b663e.jpg" /&gt;&lt;br /&gt;
+&lt;br /&gt;
+Пару недель назад, я наткнулся на эту статью &lt;a href="http://laplacian.wordpress.com/2009/01/10/how-shazam-works/"&gt;How Shazam Works&lt;/a&gt;&lt;br /&gt;
+Мне стало интересно, как же работают такие программы как Shazam… Что еще более важно, насколько тяжело написать что-либо похожее в Java?&lt;br /&gt;
+&lt;br /&gt;
+&lt;h5&gt;О Shazam&lt;/h5&gt;&lt;br /&gt;
+Если кто-то не знает, Shazam это приложение с помощью которого вы можете анализировать/подбирать музыку. Установив ее на свой телефон, и поднеся микрофон к какому-либо источнику музыки на 20-30 секунд, приложение определит, что это за песня.&lt;br /&gt;
+&lt;br /&gt;
+При первом использовании у меня возникло волшебное чувство. «Как оно это сделало!?» И даже сегодня, когда я уже пользовался им много раз, это чувство меня не покидает.&lt;br /&gt;
+Разве не будет классно, если бы мы смогли написать что-то сами, что вызывало бы такие же чувства? Это и было моей целью в прошлый уикенд.&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181654/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="225" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Простой блог с комментариями на Django: разработка и развертывание для самых маленьких</field>
+        <field type="CharField" name="summary">Данная статья предназначена для новичков в web-программировании и освещает вопросы разработки блога на &lt;a href="http://ru.wikipedia.org/wiki/Django"&gt;Django&lt;/a&gt; с использованием &lt;a href="http://ru.wikipedia.org/wiki/Twitter_bootstrap"&gt;Twitter Bootstrap&lt;/a&gt; и его развертывания на бесплатном хостинге &lt;a href="http://www.pythonanywhere.com"&gt;PythonAnywhere&lt;/a&gt;. Я старался написать как можно более проще и понятнее. Более опытным пользователям данное чтиво не расскажет ничего нового, да и некоторые приемы возможно покажутся неэффективными. &lt;br /&gt;
+&lt;br /&gt;
+&lt;img src="http://habrastorage.org/storage2/dce/775/787/dce775787d6c04aac8f8b66e8620235a.jpg" /&gt;&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181556/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="226" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Дайджест предстоящих IT-событий на июнь 2013 года</field>
+        <field type="CharField" name="summary">Представляет Вашему вниманию 5-й выпуск нашего (мы это портал &lt;a href="http://www.it-sobytie.ru/"&gt;Айти-событие.рф&lt;/a&gt;) «Дайджеста предстоящих IT-событий» на июнь 2013 года.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href="http://it-sobytie.ru/"&gt;&lt;img src="http://habrastorage.org/storage2/4fd/11c/611/4fd11c611fca894c197d968c7a84e02f.png" /&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Для удобства навигации все события разделены на 5 категорий:&lt;/b&gt;&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;I. Девелоперские&lt;/li&gt;
+&lt;li&gt;II. Джуниорские&lt;/li&gt;
+&lt;li&gt;III. Стартаперские&lt;/li&gt;
+&lt;li&gt;IV. Маркетинговые&lt;/li&gt;
+&lt;li&gt;V. Разное&lt;/li&gt;
+&lt;/ul&gt;&lt;br /&gt;
+&lt;hr /&gt;&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181552/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="227" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Пуленепробиваемый Node.js</field>
+        <field type="CharField" name="summary">&lt;b&gt;Проблемы индейцев&lt;/b&gt;&lt;br /&gt;
+Одним из остававшихся до недавнего времени недостатком Node.js, который отпугивал бекенд-разработчиков от использования Node.js был тот факт, что непойманное исключение в потоке рушила воркера и все клиенты, которые ждали от него ответа не получали ничего.&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;tl;dr&lt;/b&gt; Eсть новое API для асинхронного try\catch. Из статьи можно скопипастить пример и поиграться.&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181650/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="228" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">[Из песочницы] Валидация динамически добавлемых полей в Yii</field>
+        <field type="CharField" name="summary">Все началось с новой работы, на которой пришлось отказать от Zend и перейти на Yii. При создании личного кабинета для сайта потребовались динамическое добавление полей в форме. После ковыряния в интернете пришло такое решение. Поехали:&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181642/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="229" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Публичные шаблоны VPS на Linux/Windows — приглашаем авторов и админов для создания сервиса типа AWS AMI</field>
+        <field type="CharField" name="summary">Огромное количество разнообразного софта требует тщательной настройки VPS и поддержания сотен шаблонов в актуальном состоянии. Amazon Web Services использует поддержку сообщества для поддержания AWS AMI (Amazon Machine Images). Мы в &lt;a href="http://www.hostkey.ru"&gt;HOSTKEY &lt;/a&gt;не обладаем ресурсами для этого и просим взаимовыгодной помощи у нашего сообщества. Если коротко — мы приглашаем админов и программистов взаимовыгодно помочь нам с созданием популярных шаблонов. &lt;br /&gt;
+&lt;br /&gt;
+Большинство сложных программ с открытым кодом сложно в установке, надо знать как это делается и иметь опыт эксплуатации. По README обычно сходу не получается достичь успеха не потратив несколько часов за консолью. А через месяц наступает прозрение что все поставлено совсем не так как надо. В Амазоне есть готовые AMI. Мы ищем авторов для местного сервиса похожего по функционалу на AMI, только круче.&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src="http://habrastorage.org/storage2/b31/663/562/b31663562162a46595f9bbc1136cb4e0.png" /&gt;&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181638/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="230" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">[Из песочницы] Создаём Apple-медиахранилище на PC-основе</field>
+        <field type="CharField" name="summary">Всем привет!&lt;br /&gt;
+По наводке коллеги из Твитера &lt;a href="https://twitter.com/ripper2k"&gt;&lt;a class="user_link" href="http://habrahabr.ru/users/ripper2k/"&gt;ripper2k&lt;/a&gt;&lt;/a&gt; мой рассказ — про реализацию проекта iTunes– и DLNA-медиасервера и файлового хранилища для яблочной домашней инфраструктуры. &lt;i&gt;Реализацию успешную&lt;/i&gt;.&lt;br /&gt;
+&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181632/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="231" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Генерация 3D-сетки с предопределенными регионами поверхности при помощи NetGen</field>
+        <field type="CharField" name="summary">&lt;h4&gt;Введение&lt;/h4&gt;&lt;br /&gt;
+В предыдущем &lt;a href="http://habrahabr.ru/post/181263/"&gt;посте&lt;/a&gt; мы рассмотрели особенности использования сторонних библиотек с открытым кодом Freefem++ и NetGen в программе моделирования аэродинамических процессов. Речь шла о возможности включения этих библиотек в коммерческий проект с позиции лицензирования, об особенностях выполнения функций и включения в программную архитектуру. Данная статья является дополнением к предыдущей, в ней более детально рассмотрим библиотеку NetGen. Интерес представляют функции генерации 3D-сетки конечных элементов с заданными регионами на поверхности модели.&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181616/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="232" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Учим Pebble Watch понимать русский язык</field>
+        <field type="CharField" name="summary">&lt;img src="http://habrastorage.org/storage2/fc0/cfb/79c/fc0cfb79cecf25089114de87e4e4cfe4.jpg" /&gt;&lt;br /&gt;
+Доброго времени, читатели Хабра. &lt;br /&gt;
+В данной статье я хочу поделиться способом, с помощью которого мне удалось научить свои Pebble Watch понимать смски на русском языке и корректно отображать имена звонящих из телефонной книги. Способ не мой, а подсмотренный, ссылки на первоисточник, разумеется, я дам. Однако бурное обсуждение в &lt;a href="http://habrahabr.ru/company/rozetked/blog/180833/"&gt;данном&lt;/a&gt; обзоре, и количество негативных мнений, относительно отсутствия возможности у Pebble Watch читать смски на русском языке позволило мне судить о том, что большинство Хабраюзеров про этот способ не слышали. &lt;a href="http://habrahabr.ru/post/181630/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="233" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Три новых функции безопасности Evernote</field>
+        <field type="CharField" name="summary">&lt;img src="http://blog.evernote.com/wp-content/uploads/2013/05/feat_sec.png" /&gt;&lt;br /&gt;
+&lt;br /&gt;
+Сегодня мы анонсировали три новые функции сервиса, направленные на усиление безопасности:&lt;br /&gt;
+&lt;ul&gt;
+&lt;li&gt;двухфакторная аутентификация;&lt;/li&gt;
+&lt;li&gt;история доступа;&lt;/li&gt;
+&lt;li&gt;авторизация приложений.&lt;/li&gt;
+&lt;/ul&gt;&lt;br /&gt;
+ &lt;a href="http://habrahabr.ru/post/181624/#habracut"&gt;Читать дальше &amp;rarr;&lt;/a&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">6</field>
+    </object>
+    <object pk="234" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Новая консоль от Microsoft — Xbox One</field>
+        <field type="CharField" name="summary">&lt;p&gt;&lt;img alt="Xbox One" class="attachment-post-thumbnail wp-post-image" height="150" src="http://tech-novelty.ru/wp-content/uploads/2013/05/xboxhardware1_1020_verge_super_wide-650x447-150x150.jpg" width="150" /&gt;&lt;/p&gt;&lt;p style="text-align: justify;"&gt;&lt;a href="http://tech-novelty.ru/wp-content/uploads/2013/05/xboxhardware1_1020_verge_super_wide-650x447.jpg"&gt;&lt;img alt="Xbox One" class="aligncenter size-medium wp-image-315" height="343" src="http://tech-novelty.ru/wp-content/uploads/2013/05/xboxhardware1_1020_verge_super_wide-650x447-500x343.jpg" width="500" /&gt;&lt;/a&gt;21 мая компания &lt;strong&gt;Microsoft&lt;/strong&gt; представила игровую &lt;strong&gt;консоль&lt;/strong&gt;, которая придет на смену нынешней &lt;strong&gt;Xbox 360&lt;/strong&gt;. Новая модель получила название &lt;strong&gt;Xbox One&lt;/strong&gt; и по дизайну больше напоминает телевизионную приставку, чем консоль.&lt;span id="more-314"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;&lt;strong&gt;Консоль&lt;/strong&gt; содержит 8-ядерный процессор - 40 нм система-на-чипе AMD, 32 Мб высокоскоростной памяти ESRAM и GPU с поддержкой DirectX 11.1. Данный чип будет потреблять порядка 100 Вт, что немного больше, чем у Xbox Slim и PS3, но в &lt;strong&gt;Microsoft&lt;/strong&gt; уверяют, что новая консоль будет в четыре раза тише предшественницы. Мощности видео в &lt;strong&gt;Xbox One&lt;/strong&gt; должно быть достаточно для поддержки разрешений 1080p и 4К.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;&lt;a href="http://tech-novelty.ru/wp-content/uploads/2013/05/1-1.jpg"&gt;&lt;img alt="Xbox One с 8-ядерным процессором" class="aligncenter size-medium wp-image-316" height="205" src="http://tech-novelty.ru/wp-content/uploads/2013/05/1-1-500x205.jpg" width="500" /&gt;&lt;/a&gt;Помимо этого, в &lt;strong&gt;новой консоли&lt;/strong&gt; используется встроенный винчестер на 500 Гб и 8 Гб оперативной памяти DDR3. Так же присутствует привод Blu-ray и доступ в интернет. Так что теперь игры можно записывать и через Blu-ray, но как заявляют разработчики: он понадобится только для установки игр, но не для их запуска.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://tech-novelty.ru/wp-content/uploads/2013/05/1-2.jpg"&gt;&lt;img alt="Xbox One" class="aligncenter size-medium wp-image-317" height="232" src="http://tech-novelty.ru/wp-content/uploads/2013/05/1-2-500x232.jpg" width="500" /&gt;&lt;/a&gt;Что касается разъемов: HDMI 1.4 вход/выход, три порта USB 3.0 и гигабитный Ethernet. В качестве беспроводных опций выступает Wi-Fi 802.11n.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;&lt;a href="http://tech-novelty.ru/wp-content/uploads/2013/05/1-4.jpg"&gt;&lt;img alt="Xbox One" class="aligncenter size-medium wp-image-318" height="193" src="http://tech-novelty.ru/wp-content/uploads/2013/05/1-4-500x193.jpg" width="500" /&gt;&lt;/a&gt;Так же в &lt;strong&gt;Xbox One&lt;/strong&gt; будет присутствовать новый контроллер&lt;strong&gt; Kinect&lt;/strong&gt;, с инфракрасным сенсором (глубина сканирования 250 тыс. пикселей), помимо своих прямых возможностей, он может выступать в качестве веб-камеры с разрешением 720p.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://tech-novelty.ru/wp-content/uploads/2013/05/1-5.jpg"&gt;&lt;img alt="Xbox One" class="aligncenter size-medium wp-image-319" height="323" src="http://tech-novelty.ru/wp-content/uploads/2013/05/1-5-500x323.jpg" width="500" /&gt;&lt;/a&gt;Аудио-возможности &lt;strong&gt;One &lt;/strong&gt;включают в себя поддержку 7.1-канального звука.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://tech-novelty.ru/wp-content/uploads/2013/05/1-6.jpg"&gt;&lt;img alt="Xbox One" class="aligncenter size-medium wp-image-320" height="379" src="http://tech-novelty.ru/wp-content/uploads/2013/05/1-6-500x379.jpg" width="500" /&gt;&lt;/a&gt;Обновился и &lt;strong&gt;геймпад Xbox One&lt;/strong&gt;, он чуть изменился в дизайне, получил новый направляющий джойстик, встроенную батарею и новые триггеры вибрации. Он подключается к консоли через Wi-Fi Direct.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;На данный момент &lt;strong&gt;Microsoft&lt;/strong&gt; не объявила стоимость &lt;strong&gt;Xbox One&lt;/strong&gt;, а также дату старта продаж новой консоли. По слухам &lt;strong&gt;новая консоль&lt;/strong&gt; будет стоить около&lt;strong&gt; 500 долларов&lt;/strong&gt;.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;/p&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">7</field>
+    </object>
+    <object pk="235" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Windows-планшет лучше Apple iPad</field>
+        <field type="CharField" name="summary">&lt;p&gt;&lt;img alt="file" class="attachment-post-thumbnail wp-post-image" height="150" src="http://tech-novelty.ru/wp-content/uploads/2013/05/file-150x150.jpg" width="150" /&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img alt="Windows-планшет лучше Apple iPad" class="aligncenter size-full wp-image-311" height="269" src="http://tech-novelty.ru/wp-content/uploads/2013/05/file.jpg" title="Windows-планшет лучше Apple iPad" width="500" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;&lt;strong&gt;Microsoft&lt;/strong&gt; подхватила идею Nokia и тоже стала "подкалывать" своих конкурентов.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Так, Microsoft на днях выпустила ролик, в котором в забавное форме доказывает что планшеты на &lt;strong&gt;Windows 8 лучше чем Apple iPad.&lt;/strong&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;В ролике о преимуществах Windows 8 планшетов и недостатках Apple iPad рассказывает голосовой помощник Siri, что в своем роде является насмешкой над iPad.&lt;span id="more-309"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Siri жалуется что iPad не имеет "живых плиток", которые информируют о различных событиях на главном экране. Далее Windows 8 планшет демонстрирует свою многозадачность, запуская сразу пару приложений.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Была продемонстрирована и работа в PowerPoint. Для iPad приложений подобного уровня пока не существует.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;/center&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">7</field>
+    </object>
+    <object pk="236" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Google Glass — как будут выглядеть приложения для нового девайса</field>
+        <field type="CharField" name="summary">&lt;p&gt;&lt;img alt="Google Glass - приложения будущего" class="attachment-post-thumbnail wp-post-image" height="150" src="http://tech-novelty.ru/wp-content/uploads/2013/05/glass-150x150.jpg" width="150" /&gt;&lt;/p&gt;&lt;p style="text-align: justify;"&gt;&lt;a href="http://tech-novelty.ru/wp-content/uploads/2013/05/glass.jpg"&gt;&lt;img alt="Google Glass - приложения будущего" class="aligncenter size-medium wp-image-301" height="271" src="http://tech-novelty.ru/wp-content/uploads/2013/05/glass-500x271.jpg" width="500" /&gt;&lt;/a&gt;&lt;span&gt;Удивительный техно-социальный эксперимент. В&lt;/span&gt;&lt;span&gt;изуализация приложений, которыми мы пользуемся в настоящее время, но уже интегрированными в &lt;strong&gt;Google Glass&lt;/strong&gt;. При просмотре трудно поверить что через год или два это все уже будет доступно, и даже будет кем-то использоваться.&lt;span id="more-300"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;center&gt;
+&lt;/center&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">7</field>
+    </object>
+    <object pk="237" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Nokia Lumia 925</field>
+        <field type="CharField" name="summary">&lt;p&gt;&lt;img alt="Lumia 925" class="attachment-post-thumbnail wp-post-image" height="150" src="http://tech-novelty.ru/wp-content/uploads/2013/05/Lumia-925-150x150.jpg" width="150" /&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img alt="Nokia Lumia 925" class="aligncenter size-full wp-image-294" height="347" src="http://tech-novelty.ru/wp-content/uploads/2013/05/Lumia-925.jpg" title="Nokia Lumia 925" width="500" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Nokia наконец-то официально представила свой новый флагман - Lumia 925. Поспешу немного огорчить, &lt;strong&gt;Nokia Lumia 925&lt;/strong&gt; совсем не значительно отличается от Nokia Lumia 920. Ну а теперь обо всем подробнее.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Lumia 925 получила металлическую рамку вокруг корпуса, которая так же служит и антенной, ранее были слухи что новинка получит цельнометаллический корпус. Задняя панель выполнена из поликарбоната и будет доступна всего лишь в трех цветах: черный, серый и белый. Так же к корпусу можно будет прикреплять дополнительные панели (в том числе и панель для беспроводной зарядки), а они уже будут доступны и в ярких цветах.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;&lt;em id="__mceDel"&gt;&lt;span id="more-290"&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;em id="__mceDel"&gt;&lt;img alt="Nokia Lumia 925" class="aligncenter  wp-image-295" height="403" src="http://tech-novelty.ru/wp-content/uploads/2013/05/Nokia-Lumia.jpg" title="Nokia Lumia 925" width="400" /&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;В плане "железа" новинка почти не отличается от Lumia 920, тут так же установлен двухъядерный процессор Qualcomm Snapdragon S4 MSM8960, 1 ГБ оперативной памяти, модули Wi-Fi, Bluetooth 3.0, NFC, 3G/4G (LTE) аккумулятор на 2000 мАч.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;/center&gt;
+&lt;p style="text-align: justify;"&gt;Основными отличиями новинки является дисплей, теперь это OLED-матрица с Gorilla Glass (на Lumia 920 - IPS), но с той же диагональю и разрешением - 4,5 дюйма и 1280 х 768 пкселей. Так же улучшилась камера, но в основном за счет софта. Единственное техническое отличие камеры заключается в том, что количество линз выросло с 5 до 6.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Ну и конечно, &lt;strong&gt;Nokia Lumia 925&lt;/strong&gt; стала тоньше и легче предшественника - 8,7 мм и 139 грамм против 10,7 мм и 185 грамм у Lumia 920.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Но, к сожалению, есть и один недостаток. Объем памяти уменьшили до 16 Гб, а поддержки microSD по прежнему нет.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Цена в Европе - 469 евро до налогообложения. Про Россию пока не известно. Старт продаж на нашем рынке планируется в  3-м квартале.&lt;/p&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">7</field>
+    </object>
+    <object pk="238" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Реальные фото Motorola X Phone</field>
+        <field type="CharField" name="summary">&lt;p&gt;&lt;img alt="motorola-x-phone" class="attachment-post-thumbnail wp-post-image" height="150" src="http://tech-novelty.ru/wp-content/uploads/2013/05/motorola-x-phone-150x150.jpg" width="150" /&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img alt="Реальные фото Motorola X Phone" class="size-full wp-image-287" height="331" src="http://tech-novelty.ru/wp-content/uploads/2013/05/motorola-x-phone.jpg" title="Реальные фото Motorola X Phone" width="450" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Совсем недавно в сети появились фотографии нового, еще не анонсированного смартфона &lt;strong&gt;Motorola&lt;/strong&gt;, который сейчас тестируется в сети крупного американского оператора AT&amp;amp;T.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Очень интересным нюансом, которые вызывает некоторые предположение, является то, что новый смартфон получил внутреннее наименование - "&lt;strong&gt;XFON ATT&lt;/strong&gt;", а это уже наталкивает на мысль что перед нами именно &lt;strong&gt;X Phone&lt;/strong&gt; - совместный продукт &lt;strong&gt;Google&lt;/strong&gt; и Motorola.&lt;span id="more-285"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;В подтверждение такой догадки выступает и еще несколько фактов. Во первых Motorola обычно занималась выпуском смартфонов для другого американского оператора - Verizon, а тестирование в сети AT&amp;amp;T может означать что новое устройство станет "глобальным".&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Во вторых, смартфон работает под управлением "голого", стокового Android, так что смартфон в итоге вполне может быть выпущен под брендом &lt;strong&gt;Nexus&lt;/strong&gt;.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;К сожалению смартфон был в специальном защитном чехле, для того, что бы дизайн устройства все-таки оставался в тайне до официального анонса. В техническом плане уже известно, что девайс получил  4,7-дюймовый дисплей с разрешением 1280х720 пикселей (но, все же ожидается что финальный образец будет с Full HD дисплеем), 2 Гб оперативной памяти и 32 Гб встроенной памяти.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;По последним данным старт продаж возможен уже в июне и смартфон будет доступен в 20 различных цветах.&lt;/p&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">7</field>
+    </object>
+    <object pk="239" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Двухсимочные и 11-дюймовые планшеты от Samsung</field>
+        <field type="CharField" name="summary">&lt;p&gt;&lt;img alt="йцк" class="attachment-post-thumbnail wp-post-image" height="150" src="http://tech-novelty.ru/wp-content/uploads/2013/05/йцк-150x150.jpg" width="150" /&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img alt="Двухсимочные и 11-дюймовые планшеты от Samsung" class="aligncenter size-full wp-image-280" height="262" src="http://tech-novelty.ru/wp-content/uploads/2013/05/йцк.jpg" title="Двухсимочные и 11-дюймовые планшеты от Samsung" width="449" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Компания Samsung выбрала довольно интересную стратегию на рынке смартфонов - несколько топ устройств (&lt;a href="http://tech-novelty.ru/samsung-galaxy-s-4/" title="Samsung Galaxy S4"&gt;Samsung Galaxy S4&lt;/a&gt; и Galaxy Note) и множество самых разнообразных девайсов на любой вкус, в том числе и бюджетные устройства. Такая политика позволяет охватить максимально широкую аудитория и удерживать лидирующие позиции на рынке смартфонов. &lt;span id="more-278"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Samsung планирует воспользоваться похожей стратегией и на рынке планшетных компьютеров. Так, в ближайшее время, от корейской компании ожидают серию новых планшетов: &lt;strong&gt;Samsung Galaxy Tab DUOS 7.0&lt;/strong&gt; и&lt;strong&gt; Samsung Galaxy Tab 11&lt;/strong&gt;.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Samsung Galaxy Tab DUOS 7.0 является двухсимочным бюджетным устройством с 7-дюймовым PLS-дисплеем с разрешением 1024 х 600 пикселей, двухъядерным процессором, 2-мегапиксельной фронтальной и 3-мегапиксельной основной камерой. Также планшет получит поддержку карт памяти microSD до 32 ГБ. На самом деле характеристики почти идентичны с Samsung Galaxy Tab 3.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img alt="Samsung Galaxy Tab DUOS 7.0" class="size-full wp-image-281" height="315" src="http://tech-novelty.ru/wp-content/uploads/2013/05/wer.jpg" title="Samsung Galaxy Tab DUOS 7.0" width="500" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Samsung Galaxy Tab 11 -  11-дюймовый Super PLS TFT-дисплей (скорее всего с Full HD разрешением), двухъядерный чип Exynos 5250, две камеры — фронтальная 2 Мп и основная 8 Мп. Также имеется поддержка карт microSD до 64 ГБ.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img alt="Samsung Galaxy Tab 11" class="aligncenter size-full wp-image-282" height="389" src="http://tech-novelty.ru/wp-content/uploads/2013/05/samsung.jpg" title="Samsung Galaxy Tab 11" width="500" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Так же можно ожидать еще один девайс уже в этом году, но только если он пройдет "аттестацию" - Google — &lt;strong&gt;Nexus 11&lt;/strong&gt;. Nexus 11 получит схожие параметры с Samsung Galaxy Tab 11, за исключением процессора. В новинке от Google ожидается мощный восьмиядерный чип Exynos 5 Octa (как у&lt;a href="http://tech-novelty.ru/samsung-galaxy-s-4/" title="Samsung Galaxy S4"&gt; Galaxy S4&lt;/a&gt;). Таким образом  Nexus 11 может стать первым восьмиядерным планшетом.&lt;/p&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">7</field>
+    </object>
+    <object pk="240" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Nokia троллит обладателей смартфонов от Apple и Samsung</field>
+        <field type="CharField" name="summary">&lt;p&gt;&lt;img alt="file" class="attachment-post-thumbnail wp-post-image" height="150" src="http://tech-novelty.ru/wp-content/uploads/2013/04/file-150x150.jpg" width="150" /&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img alt="Nokia троллит обладателей смартфонов от Apple и Samsung" class="aligncenter size-full wp-image-275" height="247" src="http://tech-novelty.ru/wp-content/uploads/2013/04/file.jpg" title="Nokia троллит обладателей смартфонов от Apple и Samsung" width="450" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;&lt;strong&gt;Nokia&lt;/strong&gt; продолжает рекламировать свою линейку смартфонов &lt;strong&gt;Lumia&lt;/strong&gt; в рамках компании "Switch to Lumia" (переключайся на Lumia), но не всегда в роликах рассказывается о достоинствах этих смарфтонов.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Так, в одном из последних роликов Nokia высмеяла владельцев Apple iPhone, Samsung Galaxy S3 и Samsung Note II с их постоянными и глупыми спорами чей же девайс круче.&lt;span id="more-273"&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;/center&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">7</field>
+    </object>
+    <object pk="241" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">В продажу поступили первые Firefox смартфоны</field>
+        <field type="CharField" name="summary">&lt;p&gt;&lt;img alt="firefox-os-keon-peak2" class="attachment-post-thumbnail wp-post-image" height="150" src="http://tech-novelty.ru/wp-content/uploads/2013/04/firefox-os-keon-peak2-150x150.jpg" width="150" /&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img alt="В продажу поступили первые Firefox смартфоны" class="aligncenter size-full wp-image-265" height="324" src="http://tech-novelty.ru/wp-content/uploads/2013/04/firefox-os-keon-peak2.jpg" title="В продажу поступили первые Firefox смартфоны" width="500" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;С сегодняшнего дня стало возможным купить первые &lt;strong&gt;Firefox смартфоны&lt;/strong&gt; на сайте GeeksPhone, причем заказать их может любой желающий из любой страны.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Сейчас доступны два девайса - &lt;strong&gt;Keon&lt;/strong&gt; и &lt;strong&gt;Pea&lt;/strong&gt;k. Хотя смартфоны доступны любому желающему, предназначены они все же для разработчиков ПО и работают они на Developer Preview версии &lt;strong&gt;Firefox OS&lt;/strong&gt;. Таким способом &lt;strong&gt;Mozilla&lt;/strong&gt; хочет наполнить свой онлайн магазин играми и приложениями до выхода финальной версии Firefox OS.&lt;span id="more-263"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Keon является бюджетным вариантом и оснащен 1 ГГц процессором, 512 МБ оперативной памяти, 4 Гб внутренней памяти (есть поддержка карт памяти microSD), 3G (HSPA)/Wi-Fi/GPS модулями. Экран не большой - 3,5 дюйма с разрешением 480 х 320 пикселей. Одна основная 3 Мп камера без вспышки. Так же встроены датчик света, приближения и акселерометр.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img alt="Firefox OS смартфон Keon" class="aligncenter  wp-image-266" height="440" src="http://tech-novelty.ru/wp-content/uploads/2013/04/51df801bfbaca4d1ab1c7e8c27bc.jpg" title="Firefox OS смартфон Keon" width="350" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Второй смартфон - Peak, является устройством среднего ценового уровня. Он уже получил двухъядерный процессор Qualcomm Snapdragon S4 с тактовой частотой 1,2 ГГц, 512 Мб оперативной памяти и 4 Гб внутренней памяти (как и у Keon), 4,3 дюймовый дисплей с разрешением 960 х 540 пикселей, две камеры: фронтальная - 2 Мп, основная - 8 Мп и со вспышкой, установлены те же модули и датчики что и у Keon.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img alt="Firefox OS смартфон - Peak" class="aligncenter  wp-image-267" height="524" src="http://tech-novelty.ru/wp-content/uploads/2013/04/1b60b4eaa1764651782cd1aa671d.jpg" title="Firefox OS смартфон - Peak" width="360" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Цена смартфонов составит 119 долларов за Keon и 194 доллара за Peak.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Ранее мы уже сообщали, что разработчики ПО для Firefox OS смогут воспользоваться смартфоном&lt;a href="http://tech-novelty.ru/firefox-os-for-sony-experia/" title="Firefox OS для Sony Xperia E"&gt; Sony Xperia E&lt;/a&gt;, для которого уже была выпущена Firefox OS прошивка.&lt;/p&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">7</field>
+    </object>
+    <object pk="242" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">HTC Desire L</field>
+        <field type="CharField" name="summary">&lt;p&gt;&lt;img alt="htc" class="attachment-post-thumbnail wp-post-image" height="150" src="http://tech-novelty.ru/wp-content/uploads/2013/04/htc-150x150.jpg" width="150" /&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img alt="HTC Desire L" class="aligncenter size-full wp-image-259" height="326" src="http://tech-novelty.ru/wp-content/uploads/2013/04/htc.jpg" title="HTC Desire L" width="450" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;19 апреля 2013 г. компания HTC официально представила свой новый смартфон из линейки Desire - &lt;strong&gt;HTC Desire L&lt;/strong&gt;, рассчитанный на средний ценовой сегмент.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Сейчас уже известно что устройство будет продаваться в Тайване (цена пока не уточнялась), а чуть позже появиться и в мире. &lt;span id="more-257"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img alt="HTC Desire L" class="aligncenter size-full wp-image-260" height="405" src="http://tech-novelty.ru/wp-content/uploads/2013/04/htc2.jpg" title="HTC Desire L" width="500" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;&lt;strong&gt;HTC Desire L&lt;/strong&gt; получил 4,3 дюймовый Super LCD2 дисплей с разрешением 800 х 480, не плохой двухъядерный процессор с тактовой частотой 1Ггц, 1Гб оперативной памяти, всего лишь 4 Гб встроенной памяти, но с возможностью расширения за счет microSD до 32Гб и аккумулятор на 1800 мАч.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Стоит отметить, что смартфон получил довольно не плохую 5 Мп камеру с автофокусом и возможностью записывать HD видео. При этом, HTC Desire L достаточной тонкий - 8,9 мм. и легкий - 118 г.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Как и многие продукты HTC этот смартфон тоже может похвастаться поддержкой Beats Audio. Работает устройство под управлением &lt;strong&gt;Android 4.1.2 Jelly Bean&lt;/strong&gt; с фирменной оболочкой Sense.&lt;/p&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">7</field>
+    </object>
+    <object pk="243" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Amazon в России</field>
+        <field type="CharField" name="summary">&lt;p&gt;&lt;img alt="amazon" class="attachment-post-thumbnail wp-post-image" height="150" src="http://tech-novelty.ru/wp-content/uploads/2013/04/amazon-150x150.jpg" width="150" /&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img alt="Amazon в России" class="aligncenter size-full wp-image-251" height="246" src="http://tech-novelty.ru/wp-content/uploads/2013/04/amazon.jpg" title="Amazon в России" width="500" /&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Очень хорошая новость! По заявлению Forbes, крупнейший в мире интернет магазин &lt;strong&gt;Amazon&lt;/strong&gt; в ближайшее время откроет свое представительство в &lt;strong&gt;России&lt;/strong&gt;. И уже появилась первая информация что его может возглавить - Аркадий Витрук, бывший генеральный директор издательской группы «Азбука-Аттикус». &lt;span id="more-249"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;em id="__mceDel"&gt;&lt;img alt="Аркадий Витрук" class="aligncenter size-full wp-image-252" height="581" src="http://tech-novelty.ru/wp-content/uploads/2013/04/1324.jpg" title="Аркадий Витрук" width="400" /&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Пока Витрук не подтвердил но и не опроверг свое назначение на новый пост и пресс служба Amazon тоже не дает никаких комментариев относительной заявления Forbes.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Сейчас Amazon представлен лишь в Бразилии, Великобритании, Германии, Испании, Италии, Канаде, Китае, Франции, Японии ну и конечно же в США. Россияне же сейчас могут покупать лишь книги, аудио и видеопродукцию.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;До этого Amazon сообщала о запуске в ближайшее время &lt;strong&gt;Amazon Appstore&lt;/strong&gt; (продажа контента для Kindle) в России.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Остается только ждать.&lt;/p&gt;</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">7</field>
+    </object>
+    <object pk="244" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Microsoft's Windows 8.1 update fails to deliver</field>
+        <field type="CharField" name="summary">Microsoft’s stab at pacifying users has back-fired, as it readies Windows 8.1, which will be available at its Build developer conference next month</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="245" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Google sets seven-day deadline for zero-day disclosure</field>
+        <field type="CharField" name="summary">Google has set third-party suppliers a seven-day deadline for disclosing vulnerabilities in software to help users protect themselves from attack</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="246" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Most employees use personal devices to store business documents</field>
+        <field type="CharField" name="summary">Over 90% of enterprise workers use personal devices to store, share and access work documents</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="247" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">BT to drop Yahoo email after hacking complaints</field>
+        <field type="CharField" name="summary">BT is to replace Yahoo Mail with its own email service for its six million broadband customers after complaints about hijacked accounts</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="248" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">iPads in the boardroom at mining firm Kazakhmys</field>
+        <field type="CharField" name="summary">The mining company has saved time and money in preparing for board meetings by using iPads and Diligent software</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="249" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Universities can help London push for more tech innovation, says Boris Johnson</field>
+        <field type="CharField" name="summary">Boris Johnson pushes for London to become "entrenched" in tech innovation and startups</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="250" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Kroes pledges telecoms legislation for 2014</field>
+        <field type="CharField" name="summary">The vice president of the European Commission responsible for the digital agenda wants an end to mobile roaming and a guarantee of net neutrality in legislation before the next European Parliament elections</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="251" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">CW500: Forget the fancy graphics: how to make big data work for ordinary people</field>
+        <field type="CharField" name="summary">If there is one thing big data specialist Chris Osborne has learned after five years of working with big data, it is that the public don’t like graphs</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="252" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">London trusts adopt BT electronic health records</field>
+        <field type="CharField" name="summary">BT and CSE Healthcare roll out RiO electronic patient record system to 62 community and mental health trusts in London and south England</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="253" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Capgemini wins European Commission's datacentre energy efficiency award</field>
+        <field type="CharField" name="summary">Innovation and energy efficiency at Capgemini's Merlin datacentre in Swindon has won the 2013 EU Code of Conduct for Datacentres award</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="254" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">SAP delivers a boost to employment of people with autism</field>
+        <field type="CharField" name="summary">Specialisterne, a social enterprise set up to help people with autism get into the workplace, has had a major breakthrough with SAP</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="255" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Businesses must prepare for IT services firms bearing renegotiation gifts</field>
+        <field type="CharField" name="summary">Renegotiations and renewals inevitably bring better terms but could businesses be missing out on much more by focusing on cost</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="256" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Microsoft and trustworthy computing – not a paradox</field>
+        <field type="CharField" name="summary">Behind the scenes, Microsoft’s TwC group does a lot of work across security, cyber crime, threat intelligence and malware protection</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="257" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Argos uses GIS to support multichannel strategy</field>
+        <field type="CharField" name="summary">Argos deploys a location analytics tool to support multichannel strategy to wind down some leases and focus on online and click and collect</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="258" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Case Study: US supermarket chain solves security challenge virtually</field>
+        <field type="CharField" name="summary">A US supermarket chain has implemented an endpoint security system to secure legacy applications and to save additional development</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="259" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Drupal resets passwords after hacker breach</field>
+        <field type="CharField" name="summary">Open source content management platform Drupal has reset the passwords for almost one million accounts after hackers breached its systems</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="260" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">US mobile networks 75% faster than EU</field>
+        <field type="CharField" name="summary">European citizens may pay less than their US counterparts, but a report from the GSMA shows we are lacking in performance on our mobile networks</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="261" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">More than half UK citizens worried about nation-state cyber attacks</field>
+        <field type="CharField" name="summary">A survey has revealed that 53% of UK citizens are concerned about other countries launching damaging cyber attacks against the UK</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="262" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">Half the globe to have internet by 2017</field>
+        <field type="CharField" name="summary">Cisco predicts 48% of the world’s population will be able to get online within the next five years, with broadband speeds in the UK set to treble</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="263" model="pyreader_site.rss_content">
+        <field type="CharField" name="title">SAP leaders bang the drum for Hana as a platform</field>
+        <field type="CharField" name="summary">SAP executives are positioning the supplier’s in-memory database as a pivotal technology, not just an end in itself</field>
+        <field to="pyreader_site.rss_url" name="rss_url" rel="ManyToOneRel">8</field>
+    </object>
+    <object pk="1" model="pyreader_site.channel">
+        <field type="CharField" name="name">bbc news</field>
+        <field type="CharField" name="ctype">public</field>
+        <field type="CharField" name="description">bbc news</field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object></field>
+    </object>
+    <object pk="2" model="pyreader_site.channel">
+        <field type="CharField" name="name">euronews</field>
+        <field type="CharField" name="ctype">public</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="4"></object><object pk="5"></object></field>
+    </object>
+    <object pk="3" model="pyreader_site.channel">
+        <field type="CharField" name="name">it channel</field>
+        <field type="CharField" name="ctype">public</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="6"></object><object pk="7"></object></field>
+    </object>
+    <object pk="4" model="pyreader_site.channel">
+        <field type="CharField" name="name">all</field>
+        <field type="CharField" name="ctype">public</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object><object pk="4"></object><object pk="5"></object><object pk="6"></object><object pk="7"></object></field>
+    </object>
+    <object pk="5" model="pyreader_site.channel">
+        <field type="CharField" name="name">important channel 1</field>
+        <field type="CharField" name="ctype">public</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="6" model="pyreader_site.channel">
+        <field type="CharField" name="name">important channel 2</field>
+        <field type="CharField" name="ctype">public</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="7" model="pyreader_site.channel">
+        <field type="CharField" name="name">important channel 3</field>
+        <field type="CharField" name="ctype">public</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="8" model="pyreader_site.channel">
+        <field type="CharField" name="name">important channel 4</field>
+        <field type="CharField" name="ctype">public</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="10" model="pyreader_site.channel">
+        <field type="CharField" name="name">test channel</field>
+        <field type="CharField" name="ctype">private</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-06-01T14:01:17+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-06-01T14:01:17+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"><object pk="2"></object></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="12"></object><object pk="13"></object></field>
+    </object>
+    <object pk="11" model="pyreader_site.channel">
+        <field type="CharField" name="name">test channel 1</field>
+        <field type="CharField" name="ctype">private</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-06-01T14:02:49+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-06-01T14:02:49+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"><object pk="2"></object></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="12"></object><object pk="13"></object><object pk="14"></object></field>
+    </object>
+    <object pk="12" model="pyreader_site.channel">
+        <field type="CharField" name="name">test channel 2</field>
+        <field type="CharField" name="ctype">private</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-06-01T16:11:46+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-06-01T16:11:46+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"><object pk="2"></object></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="15"></object></field>
+    </object>
+    <object pk="13" model="pyreader_site.channel">
+        <field type="CharField" name="name">test channel 3</field>
+        <field type="CharField" name="ctype">private</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-06-01T16:13:56+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-06-01T16:13:56+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"><object pk="2"></object></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="15"></object></field>
+    </object>
+    <object pk="14" model="pyreader_site.channel">
+        <field type="CharField" name="name">test channel 5</field>
+        <field type="CharField" name="ctype">private</field>
+        <field type="CharField" name="description"></field>
+        <field type="DateTimeField" name="creation_date">2013-06-01T16:14:15+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-06-01T16:14:15+00:00</field>
+        <field to="auth.user" name="users" rel="ManyToManyRel"><object pk="2"></object></field>
+        <field to="pyreader_site.channel_tag" name="tags" rel="ManyToManyRel"></field>
+        <field to="pyreader_site.rss_url" name="rss_urls" rel="ManyToManyRel"><object pk="16"></object></field>
+    </object>
+    <object pk="1" model="pyreader_site.category">
+        <field type="CharField" name="name">news</field>
+        <field type="CharField" name="ctype">public</field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+        <field to="pyreader_site.channel" name="channels" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object><object pk="3"></object><object pk="4"></object></field>
+    </object>
+    <object pk="2" model="pyreader_site.category">
+        <field type="CharField" name="name">important channels</field>
+        <field type="CharField" name="ctype">public</field>
+        <field type="DateTimeField" name="creation_date">2013-05-31T13:59:55+00:00</field>
+        <field type="DateTimeField" name="last_update">2013-05-31T13:59:55+00:00</field>
+        <field to="pyreader_site.channel" name="channels" rel="ManyToManyRel"><object pk="5"></object><object pk="6"></object><object pk="7"></object><object pk="8"></object></field>
+    </object>
+</django-objects>

@@ -6,23 +6,130 @@
 
 <script type="text/javascript">
 
-var category_array=[];
+/*
+**	Anderson Ferminiano
+**	contato@andersonferminiano.com -- feel free to contact me for bugs or new implementations.
+**	jQuery ScrollPagination
+**	28th/March/2011
+**	http://andersonferminiano.com/jqueryscrollpagination/
+**	You may use this script for free, but keep my credits.
+**	Thank you.
+*/
 
-{%for c in categories%}
-	var channels=[]
-	{%for channel in c.channels%}
-		channels.push({name:"{{channel.name}}",id:"{{channel.id}}"})
-	{%endfor%}
-	category_array.push({name:"{{c.name}}",channels:channels})
-{%endfor%}
+var allow_next_page=true;
 
+(function( $ ){
+	 
+		 
+ $.fn.scrollPagination = function(options) {
+  		if(!allow_next_page){
+  			return 0;
+  		}
+  		allow_next_page=false;
+		var opts = $.extend($.fn.scrollPagination.defaults, options);  
+		var target = opts.scrollTarget;
+		if (target == null){
+			target = obj; 
+	 	}
+		opts.scrollTarget = target;
+		return this.each(function() {
+		  $.fn.scrollPagination.init($(this), opts);
+		});
+
+  };
+  
+  $.fn.stopScrollPagination = function(){
+	  return this.each(function() {
+	 	$(this).attr('scrollPagination', 'disabled');
+	  });
+	  
+  };
+  
+  $.fn.scrollPagination.loadContent = function(obj, opts){
+	 var target = opts.scrollTarget;
+	 var mayLoadContent = $(target).scrollTop()+opts.heightOffset >= $(document).height() - $(target).height();
+	 if (mayLoadContent){
+		 if (opts.beforeLoad != null){
+			opts.beforeLoad(); 
+		 }
+		 $(obj).children().attr('rel', 'loaded');
+		 $.ajax({
+			  type: 'POST',
+			  url: opts.contentPage,
+			  data: {'elements':$("#text_content").children().size(),'channel_id':$.QueryString["channel_id"],'ctype':$.QueryString["ctype"]},
+			  success: function(data){
+			  	$.each(data,function(index,value){
+			  		$("#text_content").append("<div class=\"rss_content\"><p class=\"rss_title\">"+value.title+"</p><br/><br/><p class=\"rss_text\">"+value.summary+"</p></div>");
+			  		allow_next_page=true;
+			  	});
+			  },
+			  dataType: 'json'
+		 });
+	 }
+	 
+  };
+  
+  $.fn.scrollPagination.init = function(obj, opts){
+	 var target = opts.scrollTarget;
+	 $(obj).attr('scrollPagination', 'enabled');
+	
+	 $(target).scroll(function(event){
+		if ($(obj).attr('scrollPagination') == 'enabled'){
+	 		$.fn.scrollPagination.loadContent(obj, opts);		
+		}
+		else {
+			event.stopPropagation();	
+		}
+	 });
+	 
+	 $.fn.scrollPagination.loadContent(obj, opts);
+	 
+ };
+	
+ $.fn.scrollPagination.defaults = {
+      	 'contentPage' : null,
+     	 'contentData' : {},
+		 'beforeLoad': null,
+		 'afterLoad': null	,
+		 'scrollTarget': null,
+		 'heightOffset': 0		  
+ };	
+})( jQuery );
+
+(function($) {
+    $.QueryString = (function(a) {
+        if (a == "") return {};
+        var b = {};
+        for (var i = 0; i < a.length; ++i)
+        {
+            var p=a[i].split('=');
+            if (p.length != 2) continue;
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+        }
+        return b;
+    })(window.location.search.substr(1).split('&'))
+})(jQuery);
 
 $(function(){
+
 	$(".category_link").click(function(event){
 		category_id=event.target.id.trim()
 		var element=".category > ul#category_channels_".concat(category_id);
 		$(element).toggle();
 		return false;
+	});
+
+	$(".category > .category_channels > a").click(function(event){
+		var query=$(this).attr('href').split('?')[1];
+		channel_id=query.split('=')[1];
+	});
+
+
+	$('#text_content').scrollPagination({
+		'contentPage': '/index_page/', // the url you are fetching the results
+		'contentData': {'elements':$("#text_content").children().size(),'channel_id':$.QueryString["channel_id"],'ctype':$.QueryString["ctype"]}, 
+		'scrollTarget': $(window), // who gonna scroll? in this example, the full window
+		'heightOffset': 10, // it gonna request when scroll is 10 pixels before the page ends
 	});
 
 });
@@ -32,7 +139,7 @@ $(function(){
 {%endblock%}
 
 {%block menu_content%}
-
+	
 	{%for category in categories%}
 		<li class="category">
 			<a id="{{category.id}}" 
@@ -40,7 +147,7 @@ $(function(){
 
 			<ul class="category_channels", id="category_channels_{{category.id}}">
 				{%for channel in category.channels%}
-					<li><a href="/?channel_id={{channel.id}}">{{channel.name}}</a></li>
+					<li><a href="/?req=true&channel_id={{channel.id}}&ctype={{channel.ctype}}">{{channel.name}}</a></li>
 				{%endfor%}
 			</ul>
 		</li>
@@ -48,7 +155,12 @@ $(function(){
 
 {%endblock%}
 
-{%block rss_content%}
+{%block content%}
+
+<div id="text_content">
+
+
+
 	{%if channel == None%}
 		No channels selected
 	{%else%}
@@ -60,6 +172,10 @@ $(function(){
 			</div>
 		{%endfor%}
 	{%endif%}
+
+
+</div>
+
 {%endblock%}
 
 {# 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

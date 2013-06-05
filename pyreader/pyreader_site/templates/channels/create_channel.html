@@ -2,25 +2,63 @@
 
 {% block title %} Create channel page {% endblock %}
 
-{% block script %} 
+{% block scripts %} 
 <script type="text/javascript">
 
 var current_label=4;
+var allow_submit=true;
 
 $(function(){
+
 	$("#plus_rss_url").click(function(event){
-		$("#rss_urls").append("<p><label for=\"id_rss_url_"+current_label+"\">url:</label><input id=\"id_rss_url_"+current_label+"\" type=\"text\" name=\"rss_url_"+current_label+"\"/> </p>");
+
+		$("#rss_urls").append("<p><label for=\""+current_label+"\">url:</label><input id=\""+current_label+"\" onchange=\"validate(this.value,"+current_label+")\" type=\"text\" name=\"rss_url_"+current_label+"\"/> <label id=\"l"+current_label+"\"  class=\"error_message\" style=\"display: none;\"> * incorrect url</label> </p>");
 		current_label+=1;
+
 	});
 
 	$('#channel_create').submit(function(){
-		$.post(
-			$(this).attr('action'),
-			$(this).serialize()
-		);
+		var valid=true;
+		if(!$("input#id_name").val()) {
+			valid=false;
+			$("div#errors p#channel_name").show();
+		}
+		if($("label.error_message").is(":visible")){
+			valid=false;
+			$("div#errors p#incorrect_urls").show();
+		}
+		if(!valid){
+			return false;
+		}
 	});
 
+	$("#rss_urls input").focusout(function(event){
+		
+	});	
+
 });
+
+function validate(url,label_index){
+		var isValid=validate_url(url.trim());
+		if(isValid){
+			$("label#l"+label_index).hide();
+		}
+		else{
+			$("label#l"+label_index).show();
+		}
+}
+
+function validate_url (url) {
+		var url_pattern=new RegExp("^(\\w+\\.\\w+)((\\.\\w+)|(/\\w*)){0,}(\\?(\\w+=\\w+\&?){0,}){0,}$");
+		if(!url){
+			return true;
+		}
+		if(url.indexOf("://")!=-1){
+			url=url.split("://")[1];
+		}
+		var isValid=url_pattern.test(url);
+		return isValid;
+	}
 
 </script>
 {% endblock %}
@@ -38,6 +76,10 @@ $(function(){
 
 	{{request.user.username}}
 	<p/>
+	<div id="errors">
+		<br/><p class="error_message" id="incorrect_urls">* You have incorrect urls, please correct them.</p>
+		<br/><p class="error_message" id="channel_name">* Enter the channel name please</p>
+	</div>
 	<form action="/channels/check_create_channel/" id="channel_create" method="post">{% csrf_token %}
 		{%for field in form%}
 			<div class="fieldWrapper">
@@ -47,14 +89,15 @@ $(function(){
 		{%endfor%}
 		<div id="rss_urls" class="rss_urls_container">
 			{%for index in "123" %}
-				<p> <label for="{{"id_rss_url_"|add:index}}">url:</label>
-					<input id="{{"id_rss_url_"|add:index}}"
-					 type="text" name="{{"rss_url_"|add:index}}"/>
+				<p> <label for="{{index}}">url:</label>
+					<input id="{{index}}"
+					 type="text" name="{{"rss_url_"|add:index}}" onchange="validate(this.value,{{index}})"/> 
+					<label id="l{{index}}" class="error_message"> * incorrect url</label>
 				</p>
 			{%endfor%}
 		</div>
 		<p><input type="button" id="plus_rss_url" value="+"/></p>
-		<p><input type="submit" value="Submit" /></p>
+		<p><input type="submit" value="Submit" onsubmit="create_channel"/></p>
 	</form>
 
 

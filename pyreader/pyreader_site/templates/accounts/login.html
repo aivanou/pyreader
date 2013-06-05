@@ -8,16 +8,19 @@
 		{{error_message}}
 	{%endif%}
 	
-	<p/>
-	<form action="/accounts/login/" method="post">{% csrf_token %}
-		{%for field in form%}
-			<div class="fieldWrapper">
-				{{field.errors}}
-				{{field.label_tag}}: {{field}}
-			</div>
-		{%endfor%}
-		<p><input type="submit" value="Submit" /></p>
-	</form>
+	{%if not allow_login or allow_login == 'True'%}
 
+		<p/>
+		<form action="/accounts/login/" method="post">{% csrf_token %}
+			{%for field in form%}
+				<div class="fieldWrapper">
+					{{field.errors}}
+					{{field.label_tag}}: {{field}}
+				</div>
+			{%endfor%}
+			<p><input type="submit" value="Submit" /></p>
+		</form>
+
+	{%endif%}
 
 {% endblock %}

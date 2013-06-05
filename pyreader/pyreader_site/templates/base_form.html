@@ -21,10 +21,17 @@
  <div id="head_cen">
   <div id="head_sup" class="head_height">
     <ul>
-     <li><a class="active" href="index.html">Home</a></li>
-     <li><a href="about.html">ABOUT</a></li>
-     <li><a href="services.html">Login</a></li>
-     <li><a href="contact.html">Register</a></li>
+      {%if user.is_authenticated == False%}
+       <li><a class="active" href="/">Home</a></li>
+       <li><a href="about.html">ABOUT</a></li>
+       <li><a href="/accounts/login/">Login</a></li>
+       <li><a href="/accounts/register/">Register</a></li>
+     {%else%}
+       <li><a class="active" href="/">Home</a></li>
+       <li><a href="about.html">ABOUT</a></li>
+       <li><a href="/channels/">My Channels</a></li>
+       <li><a href="/accounts/logout/">Logout</a></li>
+     {%endif%}
    </ul>
   </div>
  </div>
@@ -40,14 +47,8 @@
     	</ul>
    </div>
 
-   <div id="text_content">
-
-   	{%block rss_content%}
-   	{%endblock%}
-
-   </div>
-
-  
+   	{%block content%}
+   	{%endblock%} 
    
   </div>
  </div>

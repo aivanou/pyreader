@@ -10,18 +10,20 @@
 {% block content%}
 
 	{%if error_message %}
-		{{error_message}}
+		<p>{{error_message}}</p>
 	{%endif%}
 
-	<form action="/accounts/register/" id="register_form" method="post">
-		{%csrf_token%}
-		{%for field in form%}
-			<div class="register_field">
-				{{field.errors}}
-				{{field.label_tag}}: {{field}}
-			</div>
-		{%endfor%}
-		<input type="submit" value="submit"/>
-	</form>
+	{%if allow_registration == 'True'%}
+		<form action="/accounts/register/" id="register_form" method="post">
+			{%csrf_token%}
+			{%for field in form%}
+				<div class="register_field">
+					{{field.errors}}
+					{{field.label_tag}}: {{field}}
+				</div>
+			{%endfor%}
+			<input type="submit" value="submit"/>
+		</form>
+	{%endif%}
 
 {% endblock %}

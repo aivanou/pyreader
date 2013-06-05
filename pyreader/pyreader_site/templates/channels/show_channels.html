@@ -5,13 +5,19 @@
 {% block content%}
 	
 	<div class="show_channels">
-		{%for channel in channels%}
-			<p>
-			<div class="show_channel">
-				<a href="{%url 'pyreader:channel_details' channel.id%}">{{channel.name}}</a>
-			</div>
-			</p>
-		{%endfor%}
+
+		{%if channels|length == 0%}
+			<p> You do not have channels yet, but you can <a href="/channels/create/">CREATE</a> them!</p>
+		{%else%}
+			{%for channel in channels%}
+				<p>
+				<div class="show_channel">
+					<a href="{%url 'pyreader:channel_details' channel.id%}">{{channel.name}}</a>
+				</div>
+				</p>
+			{%endfor%}
+		{%endif%}
+
 	</div>
 
 {% endblock %}
